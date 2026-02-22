@@ -1,0 +1,8 @@
+/home/SOC43/Project2_Pipelined_DMA/STEP2/DMAC/SIM/..//RTL/DMAC_ARBITER.sv
+/home/SOC43/Project2_Pipelined_DMA/STEP2/DMAC/SIM/..//RTL/DMAC_CFG.sv
+/home/SOC43/Project2_Pipelined_DMA/STEP2/DMAC/SIM/..//RTL/DMAC_FIFO.sv
+/home/SOC43/Project2_Pipelined_DMA/STEP2/DMAC/SIM/..//RTL/DMAC_INITIATOR.sv
+/home/SOC43/Project2_Pipelined_DMA/STEP2/DMAC/SIM/..//RTL/DMAC_TOP.sv
+/home/SOC43/Project2_Pipelined_DMA/STEP2/DMAC/SIM/..//SIM/TB/AXI_INTF.sv
+/home/SOC43/Project2_Pipelined_DMA/STEP2/DMAC/SIM/..//SIM/TB/AXI_SLAVE.sv
+/home/SOC43/Project2_Pipelined_DMA/STEP2/DMAC/SIM/..//SIM/TB/DMAC_TOP_TB.sv

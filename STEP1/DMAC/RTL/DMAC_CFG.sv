@@ -65,6 +65,8 @@ module DMAC_CFG
     reg     [31:0]              ch3_src_addr;
     reg     [31:0]              ch3_dst_addr;
     reg     [15:0]              ch3_byte_len;
+    wire wren;
+    assign wren = psel_i & penable_i & pwrite_i;
 
     //----------------------------------------------------------
     // Write
@@ -87,7 +89,36 @@ module DMAC_CFG
     // start   : _______----_____________________________
 
     always @(posedge clk) begin
-
+        if (!rst_n) begin
+            ch0_src_addr <= 32'd0;
+            ch0_dst_addr <= 32'd0;
+            ch0_byte_len <= 16'd0;
+            ch1_src_addr <= 32'd0;
+            ch1_dst_addr <= 32'd0;
+            ch1_byte_len <= 16'd0;
+            ch2_src_addr <= 32'd0;
+            ch2_dst_addr <= 32'd0;
+            ch2_byte_len <= 16'd0;
+            ch3_src_addr <= 32'd0;
+            ch3_dst_addr <= 32'd0;
+            ch3_byte_len <= 16'd0;
+        end
+        else if (wren) begin
+            case (paddr_i)
+                12'h100: ch0_src_addr <= pwdata_i;
+                12'h104: ch0_dst_addr <= pwdata_i;
+                12'h108: ch0_byte_len <= pwdata_i[15:0];
+                12'h200: ch1_src_addr <= pwdata_i;
+                12'h204: ch1_dst_addr <= pwdata_i;
+                12'h208: ch1_byte_len <= pwdata_i[15:0];
+                12'h300: ch2_src_addr <= pwdata_i;
+                12'h304: ch2_dst_addr <= pwdata_i;
+                12'h308: ch2_byte_len <= pwdata_i[15:0];
+                12'h400: ch3_src_addr <= pwdata_i;
+                12'h404: ch3_dst_addr <= pwdata_i;
+                12'h408: ch3_byte_len <= pwdata_i[15:0];
+            endcase
+        end
         // TODO: fill your code here
 
     end
@@ -106,10 +137,38 @@ module DMAC_CFG
     // reg update : ___----_________________________________
     // prdata     :        |DATA
 
+    wire ch0_start, ch1_start, ch2_start, ch3_start;
+    assign ch0_start = (paddr_i == 12'h10C) & wren & (pwdata_i[0] == 1'b1);
+    assign ch1_start = (paddr_i == 12'h20C) & wren & (pwdata_i[0] == 1'b1);
+    assign ch2_start = (paddr_i == 12'h30C) & wren & (pwdata_i[0] == 1'b1);
+    assign ch3_start = (paddr_i == 12'h40C) & wren & (pwdata_i[0] == 1'b1);
     reg     [31:0]              rdata;
 
     always @(posedge clk) begin
-        
+        if (!rst_n) begin
+            rdata <= 32'h0000_0000;
+        end
+        else if (psel_i & !penable_i & !pwrite_i) begin
+            case (paddr_i)
+                12'h000: rdata <= 32'h0002_2025;
+                12'h100: rdata <= ch0_src_addr;
+                12'h104: rdata <= ch0_dst_addr;
+                12'h108: rdata <= {16'd0, ch0_byte_len};
+                12'h110: rdata <= {31'd0, ch0_done_i};
+                12'h200: rdata <= ch1_src_addr;
+                12'h204: rdata <= ch1_dst_addr;
+                12'h208: rdata <= {16'd0, ch1_byte_len};
+                12'h210: rdata <= {31'd0, ch1_done_i};
+                12'h300: rdata <= ch2_src_addr;
+                12'h304: rdata <= ch2_dst_addr;
+                12'h308: rdata <= {16'd0, ch2_byte_len};
+                12'h310: rdata <= {31'd0, ch2_done_i};
+                12'h400: rdata <= ch3_src_addr;
+                12'h404: rdata <= ch3_dst_addr;
+                12'h408: rdata <= {16'd0, ch3_byte_len};
+                12'h410: rdata <= {31'd0, ch3_done_i};
+            endcase
+        end
         // TODO: fill your code here
 
     end

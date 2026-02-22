@@ -1,0 +1,320 @@
+ 
+****************************************
+Report : cell
+Design : DMAC_TOP
+Version: Q-2019.12-SP5-5
+Date   : Thu Dec  4 23:41:49 2025
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    h - hierarchical
+    n - noncombinational
+    p - parameterized
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+U18                       AO221X1_LVT     saed32lvt_ss0p75v125c
+                                                          3.049728  
+U19                       AO22X1_LVT      saed32lvt_ss0p75v125c
+                                                          2.541440  
+U22                       AO221X1_LVT     saed32lvt_ss0p75v125c
+                                                          3.049728  
+U23                       AO22X1_LVT      saed32lvt_ss0p75v125c
+                                                          2.541440  
+U24                       AO221X1_LVT     saed32lvt_ss0p75v125c
+                                                          3.049728  
+U26                       AO221X1_LVT     saed32lvt_ss0p75v125c
+                                                          3.049728  
+U28                       AO221X1_LVT     saed32lvt_ss0p75v125c
+                                                          3.049728  
+U30                       AO221X1_LVT     saed32lvt_ss0p75v125c
+                                                          3.049728  
+U31                       AO22X1_LVT      saed32lvt_ss0p75v125c
+                                                          2.541440  
+U34                       AO221X1_LVT     saed32lvt_ss0p75v125c
+                                                          3.049728  
+U35                       AO22X1_LVT      saed32lvt_ss0p75v125c
+                                                          2.541440  
+U36                       AO221X1_LVT     saed32lvt_ss0p75v125c
+                                                          3.049728  
+U37                       AO22X1_LVT      saed32lvt_ss0p75v125c
+                                                          2.541440  
+U38                       AO221X1_LVT     saed32lvt_ss0p75v125c
+                                                          3.049728  
+U39                       AO22X1_LVT      saed32lvt_ss0p75v125c
+                                                          2.541440  
+U42                       AO221X1_LVT     saed32lvt_ss0p75v125c
+                                                          3.049728  
+U43                       AO22X1_LVT      saed32lvt_ss0p75v125c
+                                                          2.541440  
+U44                       AO221X1_LVT     saed32lvt_ss0p75v125c
+                                                          3.049728  
+U45                       AO22X1_LVT      saed32lvt_ss0p75v125c
+                                                          2.541440  
+U46                       AO221X1_LVT     saed32lvt_ss0p75v125c
+                                                          3.049728  
+U47                       AO22X1_LVT      saed32lvt_ss0p75v125c
+                                                          2.541440  
+U48                       AO221X1_LVT     saed32lvt_ss0p75v125c
+                                                          3.049728  
+U49                       AO22X1_LVT      saed32lvt_ss0p75v125c
+                                                          2.541440  
+U50                       AO221X1_LVT     saed32lvt_ss0p75v125c
+                                                          3.049728  
+U51                       AO22X1_LVT      saed32lvt_ss0p75v125c
+                                                          2.541440  
+U52                       AO221X1_LVT     saed32lvt_ss0p75v125c
+                                                          3.049728  
+U53                       AO22X1_LVT      saed32lvt_ss0p75v125c
+                                                          2.541440  
+U54                       AO221X1_LVT     saed32lvt_ss0p75v125c
+                                                          3.049728  
+U55                       AO22X1_LVT      saed32lvt_ss0p75v125c
+                                                          2.541440  
+U56                       AO221X1_LVT     saed32lvt_ss0p75v125c
+                                                          3.049728  
+U57                       AO22X1_LVT      saed32lvt_ss0p75v125c
+                                                          2.541440  
+U58                       AO221X1_LVT     saed32lvt_ss0p75v125c
+                                                          3.049728  
+U59                       AO22X1_LVT      saed32lvt_ss0p75v125c
+                                                          2.541440  
+U60                       AO221X1_LVT     saed32lvt_ss0p75v125c
+                                                          3.049728  
+U61                       AO22X1_LVT      saed32lvt_ss0p75v125c
+                                                          2.541440  
+U62                       AO221X1_LVT     saed32lvt_ss0p75v125c
+                                                          3.049728  
+U63                       AO22X1_LVT      saed32lvt_ss0p75v125c
+                                                          2.541440  
+U64                       AO221X1_LVT     saed32lvt_ss0p75v125c
+                                                          3.049728  
+U65                       AO22X1_LVT      saed32lvt_ss0p75v125c
+                                                          2.541440  
+U66                       AO221X1_LVT     saed32lvt_ss0p75v125c
+                                                          3.049728  
+U67                       AO22X1_LVT      saed32lvt_ss0p75v125c
+                                                          2.541440  
+U68                       AO221X1_LVT     saed32lvt_ss0p75v125c
+                                                          3.049728  
+U69                       AO22X1_LVT      saed32lvt_ss0p75v125c
+                                                          2.541440  
+U70                       AO221X1_LVT     saed32lvt_ss0p75v125c
+                                                          3.049728  
+U71                       AO22X1_LVT      saed32lvt_ss0p75v125c
+                                                          2.541440  
+U72                       AO221X1_LVT     saed32lvt_ss0p75v125c
+                                                          3.049728  
+U73                       AO22X1_LVT      saed32lvt_ss0p75v125c
+                                                          2.541440  
+U74                       AO221X1_LVT     saed32lvt_ss0p75v125c
+                                                          3.049728  
+U75                       AO22X1_LVT      saed32lvt_ss0p75v125c
+                                                          2.541440  
+U76                       AO221X1_LVT     saed32lvt_ss0p75v125c
+                                                          3.049728  
+U77                       AO22X1_LVT      saed32lvt_ss0p75v125c
+                                                          2.541440  
+U78                       AO221X1_LVT     saed32lvt_ss0p75v125c
+                                                          3.049728  
+U79                       AO22X1_LVT      saed32lvt_ss0p75v125c
+                                                          2.541440  
+U80                       AO221X1_LVT     saed32lvt_ss0p75v125c
+                                                          3.049728  
+U81                       AO22X1_LVT      saed32lvt_ss0p75v125c
+                                                          2.541440  
+U82                       AO221X1_LVT     saed32lvt_ss0p75v125c
+                                                          3.049728  
+U83                       AO22X1_LVT      saed32lvt_ss0p75v125c
+                                                          2.541440  
+U84                       AO221X1_LVT     saed32lvt_ss0p75v125c
+                                                          3.049728  
+U85                       AO22X1_LVT      saed32lvt_ss0p75v125c
+                                                          2.541440  
+U86                       AO221X1_LVT     saed32lvt_ss0p75v125c
+                                                          3.049728  
+U87                       AO22X1_LVT      saed32lvt_ss0p75v125c
+                                                          2.541440  
+U88                       AO221X1_LVT     saed32lvt_ss0p75v125c
+                                                          3.049728  
+U89                       AO22X1_LVT      saed32lvt_ss0p75v125c
+                                                          2.541440  
+U90                       AO221X1_LVT     saed32lvt_ss0p75v125c
+                                                          3.049728  
+U91                       AO22X1_LVT      saed32lvt_ss0p75v125c
+                                                          2.541440  
+U101                      NAND2X0_LVT     saed32lvt_ss0p75v125c
+                                                          1.524864  
+U102                      AND2X1_LVT      saed32lvt_ss0p75v125c
+                                                          2.033152  
+U104                      AND2X1_LVT      saed32lvt_ss0p75v125c
+                                                          2.033152  
+U105                      AND3X1_LVT      saed32lvt_ss0p75v125c
+                                                          2.287296  
+U106                      AND3X1_LVT      saed32lvt_ss0p75v125c
+                                                          2.287296  
+U107                      AND3X1_LVT      saed32lvt_ss0p75v125c
+                                                          2.287296  
+U108                      AND3X1_LVT      saed32lvt_ss0p75v125c
+                                                          2.287296  
+U109                      AND3X1_LVT      saed32lvt_ss0p75v125c
+                                                          2.287296  
+U110                      DELLN2X2_LVT    saed32lvt_ss0p75v125c
+                                                          6.607744  
+U111                      DELLN2X2_LVT    saed32lvt_ss0p75v125c
+                                                          6.607744  
+U112                      NOR2X0_LVT      saed32lvt_ss0p75v125c
+                                                          2.541440  
+U113                      OR2X1_LVT       saed32lvt_ss0p75v125c
+                                                          2.033152  
+U114                      INVX0_LVT       saed32lvt_ss0p75v125c
+                                                          1.270720  
+U115                      NAND2X0_LVT     saed32lvt_ss0p75v125c
+                                                          1.524864  
+U116                      NAND3X0_LVT     saed32lvt_ss0p75v125c
+                                                          1.779008  
+U117                      INVX1_LVT       saed32lvt_ss0p75v125c
+                                                          1.270720  
+U118                      INVX0_LVT       saed32lvt_ss0p75v125c
+                                                          1.270720  
+U119                      OR2X2_LVT       saed32lvt_ss0p75v125c
+                                                          2.287296  
+U120                      AND3X4_LVT      saed32lvt_ss0p75v125c
+                                                          3.049728  
+U121                      INVX0_LVT       saed32lvt_ss0p75v125c
+                                                          1.270720  
+U122                      INVX0_LVT       saed32lvt_ss0p75v125c
+                                                          1.270720  
+U123                      AND2X1_LVT      saed32lvt_ss0p75v125c
+                                                          2.033152  
+U124                      OR2X2_LVT       saed32lvt_ss0p75v125c
+                                                          2.287296  
+U125                      NAND4X0_LVT     saed32lvt_ss0p75v125c
+                                                          2.033152  
+U126                      INVX1_LVT       saed32lvt_ss0p75v125c
+                                                          1.270720  
+U127                      NBUFFX2_LVT     saed32lvt_ss0p75v125c
+                                                          2.033152  
+U128                      NBUFFX2_LVT     saed32lvt_ss0p75v125c
+                                                          2.033152  
+U129                      NBUFFX2_LVT     saed32lvt_ss0p75v125c
+                                                          2.033152  
+U130                      AO22X1_LVT      saed32lvt_ss0p75v125c
+                                                          2.541440  
+U131                      NAND3X0_LVT     saed32lvt_ss0p75v125c
+                                                          1.779008  
+U132                      INVX0_LVT       saed32lvt_ss0p75v125c
+                                                          1.270720  
+U133                      INVX1_LVT       saed32lvt_ss0p75v125c
+                                                          1.270720  
+U134                      AND2X1_LVT      saed32lvt_ss0p75v125c
+                                                          2.033152  
+U135                      NBUFFX2_LVT     saed32lvt_ss0p75v125c
+                                                          2.033152  
+U136                      AO22X1_LVT      saed32lvt_ss0p75v125c
+                                                          2.541440  
+U137                      NBUFFX2_LVT     saed32lvt_ss0p75v125c
+                                                          2.033152  
+U138                      NBUFFX2_LVT     saed32lvt_ss0p75v125c
+                                                          2.033152  
+U139                      NAND2X0_LVT     saed32lvt_ss0p75v125c
+                                                          1.524864  
+U140                      NAND2X0_LVT     saed32lvt_ss0p75v125c
+                                                          1.524864  
+U141                      OR2X2_LVT       saed32lvt_ss0p75v125c
+                                                          2.287296  
+U142                      INVX0_LVT       saed32lvt_ss0p75v125c
+                                                          1.270720  
+U143                      AO22X1_LVT      saed32lvt_ss0p75v125c
+                                                          2.541440  
+U144                      INVX0_LVT       saed32lvt_ss0p75v125c
+                                                          1.270720  
+U145                      NAND2X0_LVT     saed32lvt_ss0p75v125c
+                                                          1.524864  
+U146                      NBUFFX2_LVT     saed32lvt_ss0p75v125c
+                                                          2.033152  
+U147                      NBUFFX2_LVT     saed32lvt_ss0p75v125c
+                                                          2.033152  
+U148                      AOI22X1_LVT     saed32lvt_ss0p75v125c
+                                                          3.049728  
+U149                      NAND2X0_LVT     saed32lvt_ss0p75v125c
+                                                          1.524864  
+U150                      NAND3X0_LVT     saed32lvt_ss0p75v125c
+                                                          1.779008  
+U151                      NAND2X0_LVT     saed32lvt_ss0p75v125c
+                                                          1.524864  
+U152                      AOI22X1_LVT     saed32lvt_ss0p75v125c
+                                                          3.049728  
+U153                      NBUFFX2_LVT     saed32lvt_ss0p75v125c
+                                                          2.033152  
+U154                      NAND3X0_LVT     saed32lvt_ss0p75v125c
+                                                          1.779008  
+U155                      IBUFFX2_LVT     saed32lvt_ss0p75v125c
+                                                          2.541440  
+U156                      INVX0_LVT       saed32lvt_ss0p75v125c
+                                                          1.270720  
+U157                      INVX0_LVT       saed32lvt_ss0p75v125c
+                                                          1.270720  
+U158                      INVX0_LVT       saed32lvt_ss0p75v125c
+                                                          1.270720  
+U159                      NBUFFX2_LVT     saed32lvt_ss0p75v125c
+                                                          2.033152  
+U160                      NBUFFX2_LVT     saed32lvt_ss0p75v125c
+                                                          2.033152  
+U161                      NBUFFX2_LVT     saed32lvt_ss0p75v125c
+                                                          2.033152  
+U162                      NBUFFX2_LVT     saed32lvt_ss0p75v125c
+                                                          2.033152  
+U163                      NBUFFX2_LVT     saed32lvt_ss0p75v125c
+                                                          2.033152  
+U164                      NBUFFX2_LVT     saed32lvt_ss0p75v125c
+                                                          2.033152  
+U165                      NBUFFX2_LVT     saed32lvt_ss0p75v125c
+                                                          2.033152  
+U166                      NBUFFX2_LVT     saed32lvt_ss0p75v125c
+                                                          2.033152  
+U167                      NBUFFX2_LVT     saed32lvt_ss0p75v125c
+                                                          2.033152  
+U168                      NBUFFX2_LVT     saed32lvt_ss0p75v125c
+                                                          2.033152  
+U169                      NBUFFX2_LVT     saed32lvt_ss0p75v125c
+                                                          2.033152  
+U170                      AND2X1_LVT      saed32lvt_ss0p75v125c
+                                                          2.033152  
+U172                      INVX1_LVT       saed32lvt_ss0p75v125c
+                                                          1.270720  
+U173                      INVX1_LVT       saed32lvt_ss0p75v125c
+                                                          1.270720  
+U174                      INVX1_LVT       saed32lvt_ss0p75v125c
+                                                          1.270720  
+U175                      INVX1_LVT       saed32lvt_ss0p75v125c
+                                                          1.270720  
+U176                      INVX1_LVT       saed32lvt_ss0p75v125c
+                                                          1.270720  
+U177                      INVX1_LVT       saed32lvt_ss0p75v125c
+                                                          1.270720  
+channel[0].u_initiator    DMAC_INITIATOR_3                1382.543383
+                                                                    h, n
+channel[1].u_initiator    DMAC_INITIATOR_2                1389.913559
+                                                                    h, n
+channel[2].u_initiator    DMAC_INITIATOR_1                1395.250583
+                                                                    h, n
+channel[3].u_initiator    DMAC_INITIATOR_0                1371.869334
+                                                                    h, n
+u_ar_arbiter              DMAC_ARBITER_N_MASTER4_DATA_SIZE45
+                                                          544.376453
+                                                                    h, n, p
+u_aw_fifo                 DMAC_FIFO_DEPTH_LG24_DATA_WIDTH40
+                                                          8169.967341
+                                                                    h, n, p
+u_cfg                     DMAC_CFG                        4215.232488
+                                                                    h, n
+u_data_fifo               DMAC_FIFO_DEPTH_LG24_DATA_WIDTH37
+                                                          7320.618076
+                                                                    h, n, p
+--------------------------------------------------------------------------------
+Total 148 cells                                           26122.445714
+1

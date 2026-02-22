@@ -1,0 +1,74 @@
+{
+    "std": [
+        "std",
+        "reYIK",
+        "module",
+        1
+    ],
+    "AXI_AW_CH": [
+        "AXI_AW_CH",
+        "hVs2i",
+        "module",
+        2
+    ],
+    "AXI_W_CH": [
+        "AXI_W_CH",
+        "qTTuA",
+        "module",
+        3
+    ],
+    "AXI_B_CH": [
+        "AXI_B_CH",
+        "hg5xj",
+        "module",
+        4
+    ],
+    "AXI_AR_CH": [
+        "AXI_AR_CH",
+        "Lra34",
+        "module",
+        5
+    ],
+    "AXI_R_CH": [
+        "AXI_R_CH",
+        "LrdUn",
+        "module",
+        6
+    ],
+    "APB": [
+        "APB",
+        "nE6vf",
+        "module",
+        7
+    ],
+    "DMAC_TOP_TB": [
+        "DMAC_TOP_TB",
+        "paB15",
+        "module",
+        8
+    ],
+    "DMAC_TOP_0000": [
+        "DMAC_TOP_0000",
+        "r0WT9",
+        "module",
+        9
+    ],
+    "DMAC_INITIATOR": [
+        "DMAC_INITIATOR",
+        "CwLQj",
+        "module",
+        10
+    ],
+    "DMAC_ARBITER": [
+        "DMAC_ARBITER",
+        "utqp5",
+        "module",
+        11
+    ],
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
+        "module",
+        12
+    ]
+}

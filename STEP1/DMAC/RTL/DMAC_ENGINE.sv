@@ -65,6 +65,7 @@ module DMAC_ENGINE
     reg     [31:0]              dst_addr,   dst_addr_n;
     reg     [15:0]              cnt,        cnt_n;
     reg     [3:0]               wcnt,       wcnt_n;
+    reg [4:0] outstanding_wr_cnt;
 
     reg                         arvalid,
                                 rready,
@@ -78,7 +79,7 @@ module DMAC_ENGINE
     reg                         fifo_wren,
                                 fifo_rden;
     wire    [31:0]              fifo_rdata;
-
+    wire r_hs = rvalid_i & rready_o;
 
     // it's desirable to code registers in a simple way
     always_ff @(posedge clk)
@@ -105,9 +106,117 @@ module DMAC_ENGINE
     // this block programs output values and next register values
     // based on states.
     always_comb begin
+        state_n = state;
+        src_addr_n = src_addr;
+        dst_addr_n = dst_addr;
+        cnt_n = cnt;
+        wcnt_n = wcnt;
+
+        arvalid = 1'b0;
+        rready = 1'b0;
+        awvalid = 1'b0;
+        wvalid = 1'b0;
+        done = 1'b0;
+
+        fifo_wren = 1'b0;
+        fifo_rden = 1'b0;
+        
+        case (state)
+            S_IDLE: begin
+                done = 1'b1;
+                if(start_i && (byte_len_i != 16'd0)) begin
+                    state_n = S_RREQ;
+                    src_addr_n = src_addr_i;
+                    dst_addr_n = dst_addr_i;
+                    cnt_n = byte_len_i;
+                end
+            end
+
+            S_RREQ: begin
+                arvalid = 1'b1;
+                if(arready_i) begin
+                    state_n = S_RDATA;
+                    src_addr_n = src_addr + 32'd64;
+                end    
+            end
+
+            S_RDATA: begin
+                rready = 1'b1;
+                
+                if(r_hs && rlast_i) begin
+                    fifo_wren = 1'b1;
+                    awvalid = 1'b1;
+
+                    if (awready_i) begin
+                        state_n = S_WDATA;
+                        dst_addr_n = dst_addr + 32'd64;
+                        cnt_n = (cnt >= 16'd64) ? (cnt - 16'd64) : 16'd0;
+                        wcnt_n = awlen_o;
+                    end
+                    else begin
+                        state_n = S_WREQ;
+                    end
+                end
+                else if(r_hs && !rlast_i) begin
+                    state_n = S_RDATA;
+                    fifo_wren = 1'b1;
+                end
+            end
+
+            S_WREQ: begin
+                awvalid = 1'b1;
+                if(awready_i) begin
+                    state_n = S_WDATA;
+                    dst_addr_n = dst_addr + 32'd64;
+                    cnt_n = (cnt >= 16'd64)? (cnt - 16'd64) : 16'd0;
+                    wcnt_n = awlen_o;
+                end    
+            end
+
+            S_WDATA: begin
+                wvalid = 1'b1;
+                wlast = (wcnt == 4'd0);
+
+                if(wready_i) begin
+                    fifo_rden = 1'b1;
+                    
+                    if (wlast) begin
+                        if (cnt != 16'd0) begin
+                            state_n = S_RREQ;
+                        end
+                        else begin
+                            state_n = S_WAIT;
+                        end
+                    end
+                    else begin
+                        state_n = S_WDATA;
+                        wcnt_n = wcnt - 4'd1;
+                    end
+                end 
+            end
+
+            S_WAIT: begin
+                if(outstanding_wr_cnt == 0) begin
+                    state_n = S_IDLE;
+                    done = 1'b1;
+                end    
+            end 
+        endcase
         // FIXME: Fill your code here (FSM)
     end
 
+    always_ff @(posedge clk or negedge rst_n) begin
+        if (!rst_n) begin
+            outstanding_wr_cnt <= 5'd0;
+        end 
+        else begin
+            case ({ (awvalid_o & awready_i), (bvalid_i & bready_o) })
+                2'b10: outstanding_wr_cnt <= outstanding_wr_cnt + 5'd1;
+                2'b01: outstanding_wr_cnt <= outstanding_wr_cnt - 5'd1;
+                default: outstanding_wr_cnt <= outstanding_wr_cnt;
+            endcase
+        end
+    end
 
     // FIXME: implement outstanding_wr_cnt
 

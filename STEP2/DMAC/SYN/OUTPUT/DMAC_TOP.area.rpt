@@ -1,0 +1,61 @@
+ 
+****************************************
+Report : area
+Design : DMAC_TOP
+Version: Q-2019.12-SP5-5
+Date   : Thu Dec  4 23:41:48 2025
+****************************************
+
+Library(s) Used:
+
+    saed32lvt_ss0p75v125c (File: /home/ScalableArchiLab/SAED32_EDK/lib/stdcell_lvt/db_ccs/saed32lvt_ss0p75v125c.db)
+
+Number of ports:                         2534
+Number of nets:                          9495
+Number of cells:                         7195
+Number of combinational cells:           5191
+Number of sequential cells:              1940
+Number of macros/black boxes:               0
+Number of buf/inv:                       1210
+Number of references:                      25
+
+Combinational area:              13117.896853
+Buf/Inv area:                     2234.434136
+Noncombinational area:           13004.548862
+Macro/Black Box area:                0.000000
+Net Interconnect area:            6965.196481
+
+Total cell area:                 26122.445714
+Total area:                      33087.642195
+
+The above information was reported from the logical library. The following are from the physical library:
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area            Local cell area
+                                  -------------------  ------------------------------ 
+Hierarchical cell                 Absolute    Percent  Combi-      Noncombi-   Black-
+                                  Total       Total    national    national    boxes   Design
+--------------------------------  ----------  -------  ----------  ----------  ------  --------------------------------------
+DMAC_TOP                          26122.4457    100.0    332.6745      0.0000  0.0000  DMAC_TOP
+channel[0].u_initiator             1382.5434      5.3    483.8902    583.5146  0.0000  DMAC_INITIATOR_3
+channel[0].u_initiator/add_84       157.5693      0.6    157.5693      0.0000  0.0000  DMAC_INITIATOR_3_DW01_add_1_DW01_add_7
+channel[0].u_initiator/add_85       157.5693      0.6    157.5693      0.0000  0.0000  DMAC_INITIATOR_3_DW01_add_0_DW01_add_6
+channel[1].u_initiator             1389.9136      5.3    491.2604    583.5146  0.0000  DMAC_INITIATOR_2
+channel[1].u_initiator/add_84       157.5693      0.6    157.5693      0.0000  0.0000  DMAC_INITIATOR_2_DW01_add_1_DW01_add_5
+channel[1].u_initiator/add_85       157.5693      0.6    157.5693      0.0000  0.0000  DMAC_INITIATOR_2_DW01_add_0_DW01_add_4
+channel[2].u_initiator             1395.2506      5.3    500.6637    583.5146  0.0000  DMAC_INITIATOR_1
+channel[2].u_initiator/add_84       153.5030      0.6    153.5030      0.0000  0.0000  DMAC_INITIATOR_1_DW01_add_1_DW01_add_3
+channel[2].u_initiator/add_85       157.5693      0.6    157.5693      0.0000  0.0000  DMAC_INITIATOR_1_DW01_add_0_DW01_add_2
+channel[3].u_initiator             1371.8693      5.3    477.2824    583.5146  0.0000  DMAC_INITIATOR_0
+channel[3].u_initiator/add_84       153.5030      0.6    153.5030      0.0000  0.0000  DMAC_INITIATOR_0_DW01_add_1
+channel[3].u_initiator/add_85       157.5693      0.6    157.5693      0.0000  0.0000  DMAC_INITIATOR_0_DW01_add_0
+u_ar_arbiter                        544.3765      2.1    515.9123     28.4641  0.0000  DMAC_ARBITER_N_MASTER4_DATA_SIZE45
+u_aw_fifo                          8169.9673     31.3   3853.3314   4316.6360  0.0000  DMAC_FIFO_DEPTH_LG24_DATA_WIDTH40
+u_cfg                              4215.2325     16.1   1889.3065   2325.9260  0.0000  DMAC_CFG
+u_data_fifo                        7320.6181     28.0   3321.1538   3999.4643  0.0000  DMAC_FIFO_DEPTH_LG24_DATA_WIDTH37
+--------------------------------  ----------  -------  ----------  ----------  ------  --------------------------------------
+Total                                                  13117.8969  13004.5489  0.0000
+
+1

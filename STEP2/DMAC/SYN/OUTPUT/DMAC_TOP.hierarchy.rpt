@@ -1,0 +1,253 @@
+ 
+****************************************
+Report : hierarchy
+        -full
+Design : DMAC_TOP
+Version: Q-2019.12-SP5-5
+Date   : Thu Dec  4 23:41:49 2025
+****************************************
+
+DMAC_TOP
+    AND2X1_LVT                                         saed32lvt_ss0p75v125c
+    AND3X1_LVT                                         saed32lvt_ss0p75v125c
+    AND3X4_LVT                                         saed32lvt_ss0p75v125c
+    AO22X1_LVT                                         saed32lvt_ss0p75v125c
+    AO221X1_LVT                                        saed32lvt_ss0p75v125c
+    AOI22X1_LVT                                        saed32lvt_ss0p75v125c
+    DELLN2X2_LVT                                       saed32lvt_ss0p75v125c
+    DMAC_ARBITER_N_MASTER4_DATA_SIZE45
+        AND2X1_LVT                                     saed32lvt_ss0p75v125c
+        AND3X4_LVT                                     saed32lvt_ss0p75v125c
+        AO21X1_LVT                                     saed32lvt_ss0p75v125c
+        AO21X2_LVT                                     saed32lvt_ss0p75v125c
+        AO22X1_LVT                                     saed32lvt_ss0p75v125c
+        AO221X1_LVT                                    saed32lvt_ss0p75v125c
+        DELLN2X2_LVT                                   saed32lvt_ss0p75v125c
+        DELLN3X2_LVT                                   saed32lvt_ss0p75v125c
+        DFFARX1_LVT                                    saed32lvt_ss0p75v125c
+        IBUFFX2_LVT                                    saed32lvt_ss0p75v125c
+        INVX0_LVT                                      saed32lvt_ss0p75v125c
+        INVX1_LVT                                      saed32lvt_ss0p75v125c
+        NAND2X0_LVT                                    saed32lvt_ss0p75v125c
+        NAND2X4_LVT                                    saed32lvt_ss0p75v125c
+        NAND3X0_LVT                                    saed32lvt_ss0p75v125c
+        NAND3X2_LVT                                    saed32lvt_ss0p75v125c
+        NBUFFX2_LVT                                    saed32lvt_ss0p75v125c
+        OR2X4_LVT                                      saed32lvt_ss0p75v125c
+    DMAC_CFG
+        AND2X1_LVT                                     saed32lvt_ss0p75v125c
+        AND3X1_LVT                                     saed32lvt_ss0p75v125c
+        AND4X1_LVT                                     saed32lvt_ss0p75v125c
+        AO21X1_LVT                                     saed32lvt_ss0p75v125c
+        AO22X1_LVT                                     saed32lvt_ss0p75v125c
+        AO222X1_LVT                                    saed32lvt_ss0p75v125c
+        AOI21X1_LVT                                    saed32lvt_ss0p75v125c
+        AOI22X1_LVT                                    saed32lvt_ss0p75v125c
+        AOI221X1_LVT                                   saed32lvt_ss0p75v125c
+        AOI222X1_LVT                                   saed32lvt_ss0p75v125c
+        DFFX1_LVT                                      saed32lvt_ss0p75v125c
+        INVX0_LVT                                      saed32lvt_ss0p75v125c
+        INVX1_LVT                                      saed32lvt_ss0p75v125c
+        NAND2X0_LVT                                    saed32lvt_ss0p75v125c
+        NAND3X0_LVT                                    saed32lvt_ss0p75v125c
+        NAND4X0_LVT                                    saed32lvt_ss0p75v125c
+        NBUFFX2_LVT                                    saed32lvt_ss0p75v125c
+        NOR2X0_LVT                                     saed32lvt_ss0p75v125c
+        NOR4X1_LVT                                     saed32lvt_ss0p75v125c
+        OA21X2_LVT                                     saed32lvt_ss0p75v125c
+        OA22X1_LVT                                     saed32lvt_ss0p75v125c
+        OA221X1_LVT                                    saed32lvt_ss0p75v125c
+        OA222X1_LVT                                    saed32lvt_ss0p75v125c
+    DMAC_FIFO_DEPTH_LG24_DATA_WIDTH37
+        AND2X1_LVT                                     saed32lvt_ss0p75v125c
+        AND2X4_LVT                                     saed32lvt_ss0p75v125c
+        AO21X1_LVT                                     saed32lvt_ss0p75v125c
+        AO22X1_LVT                                     saed32lvt_ss0p75v125c
+        AO221X1_LVT                                    saed32lvt_ss0p75v125c
+        AOI21X1_LVT                                    saed32lvt_ss0p75v125c
+        DFFSSRX1_LVT                                   saed32lvt_ss0p75v125c
+        DFFX1_LVT                                      saed32lvt_ss0p75v125c
+        HADDX1_LVT                                     saed32lvt_ss0p75v125c
+        IBUFFX2_LVT                                    saed32lvt_ss0p75v125c
+        INVX0_LVT                                      saed32lvt_ss0p75v125c
+        INVX1_LVT                                      saed32lvt_ss0p75v125c
+        NAND2X0_LVT                                    saed32lvt_ss0p75v125c
+        NAND3X1_LVT                                    saed32lvt_ss0p75v125c
+        NBUFFX2_LVT                                    saed32lvt_ss0p75v125c
+        NOR4X0_LVT                                     saed32lvt_ss0p75v125c
+        NOR4X1_LVT                                     saed32lvt_ss0p75v125c
+        OAI22X1_LVT                                    saed32lvt_ss0p75v125c
+        OR4X1_LVT                                      saed32lvt_ss0p75v125c
+        XNOR2X1_LVT                                    saed32lvt_ss0p75v125c
+        XOR2X1_LVT                                     saed32lvt_ss0p75v125c
+    DMAC_FIFO_DEPTH_LG24_DATA_WIDTH40
+        AND2X1_LVT                                     saed32lvt_ss0p75v125c
+        AND2X4_LVT                                     saed32lvt_ss0p75v125c
+        AO21X1_LVT                                     saed32lvt_ss0p75v125c
+        AO22X1_LVT                                     saed32lvt_ss0p75v125c
+        AO22X2_LVT                                     saed32lvt_ss0p75v125c
+        AO221X1_LVT                                    saed32lvt_ss0p75v125c
+        AOI21X1_LVT                                    saed32lvt_ss0p75v125c
+        AOI21X2_LVT                                    saed32lvt_ss0p75v125c
+        DELLN1X2_LVT                                   saed32lvt_ss0p75v125c
+        DELLN3X2_LVT                                   saed32lvt_ss0p75v125c
+        DFFSSRX1_LVT                                   saed32lvt_ss0p75v125c
+        DFFX1_LVT                                      saed32lvt_ss0p75v125c
+        HADDX1_LVT                                     saed32lvt_ss0p75v125c
+        IBUFFX2_LVT                                    saed32lvt_ss0p75v125c
+        INVX0_LVT                                      saed32lvt_ss0p75v125c
+        INVX1_LVT                                      saed32lvt_ss0p75v125c
+        NAND2X0_LVT                                    saed32lvt_ss0p75v125c
+        NAND3X0_LVT                                    saed32lvt_ss0p75v125c
+        NBUFFX2_LVT                                    saed32lvt_ss0p75v125c
+        NOR4X0_LVT                                     saed32lvt_ss0p75v125c
+        NOR4X1_LVT                                     saed32lvt_ss0p75v125c
+        OAI22X1_LVT                                    saed32lvt_ss0p75v125c
+        OR4X1_LVT                                      saed32lvt_ss0p75v125c
+        XNOR2X1_LVT                                    saed32lvt_ss0p75v125c
+        XOR2X1_LVT                                     saed32lvt_ss0p75v125c
+    DMAC_INITIATOR_0
+        AND2X1_LVT                                     saed32lvt_ss0p75v125c
+        AND4X1_LVT                                     saed32lvt_ss0p75v125c
+        AO21X1_LVT                                     saed32lvt_ss0p75v125c
+        AO21X2_LVT                                     saed32lvt_ss0p75v125c
+        AO221X1_LVT                                    saed32lvt_ss0p75v125c
+        AO222X1_LVT                                    saed32lvt_ss0p75v125c
+        DFFARX1_LVT                                    saed32lvt_ss0p75v125c
+        DMAC_INITIATOR_0_DW01_add_0
+            AND2X1_LVT                                 saed32lvt_ss0p75v125c
+            INVX1_LVT                                  saed32lvt_ss0p75v125c
+            NAND2X0_LVT                                saed32lvt_ss0p75v125c
+            XNOR2X1_LVT                                saed32lvt_ss0p75v125c
+            XOR2X1_LVT                                 saed32lvt_ss0p75v125c
+        DMAC_INITIATOR_0_DW01_add_1
+            AND2X1_LVT                                 saed32lvt_ss0p75v125c
+            FADDX1_LVT                                 saed32lvt_ss0p75v125c
+            INVX1_LVT                                  saed32lvt_ss0p75v125c
+            XOR2X1_LVT                                 saed32lvt_ss0p75v125c
+        INVX0_LVT                                      saed32lvt_ss0p75v125c
+        INVX1_LVT                                      saed32lvt_ss0p75v125c
+        NAND2X0_LVT                                    saed32lvt_ss0p75v125c
+        NAND3X0_LVT                                    saed32lvt_ss0p75v125c
+        NBUFFX2_LVT                                    saed32lvt_ss0p75v125c
+        NOR2X0_LVT                                     saed32lvt_ss0p75v125c
+        NOR3X0_LVT                                     saed32lvt_ss0p75v125c
+        NOR4X1_LVT                                     saed32lvt_ss0p75v125c
+        OA21X1_LVT                                     saed32lvt_ss0p75v125c
+        OR2X1_LVT                                      saed32lvt_ss0p75v125c
+        OR3X1_LVT                                      saed32lvt_ss0p75v125c
+        OR4X1_LVT                                      saed32lvt_ss0p75v125c
+        XNOR2X1_LVT                                    saed32lvt_ss0p75v125c
+        XOR2X1_LVT                                     saed32lvt_ss0p75v125c
+    DMAC_INITIATOR_1
+        AND2X1_LVT                                     saed32lvt_ss0p75v125c
+        AND4X1_LVT                                     saed32lvt_ss0p75v125c
+        AO21X1_LVT                                     saed32lvt_ss0p75v125c
+        AO221X1_LVT                                    saed32lvt_ss0p75v125c
+        AO222X1_LVT                                    saed32lvt_ss0p75v125c
+        DELLN3X2_LVT                                   saed32lvt_ss0p75v125c
+        DFFARX1_LVT                                    saed32lvt_ss0p75v125c
+        DMAC_INITIATOR_1_DW01_add_0_DW01_add_2
+            AND2X1_LVT                                 saed32lvt_ss0p75v125c
+            INVX1_LVT                                  saed32lvt_ss0p75v125c
+            NAND2X0_LVT                                saed32lvt_ss0p75v125c
+            XNOR2X1_LVT                                saed32lvt_ss0p75v125c
+            XOR2X1_LVT                                 saed32lvt_ss0p75v125c
+        DMAC_INITIATOR_1_DW01_add_1_DW01_add_3
+            AND2X1_LVT                                 saed32lvt_ss0p75v125c
+            FADDX1_LVT                                 saed32lvt_ss0p75v125c
+            INVX1_LVT                                  saed32lvt_ss0p75v125c
+            XOR2X1_LVT                                 saed32lvt_ss0p75v125c
+        INVX0_LVT                                      saed32lvt_ss0p75v125c
+        INVX1_LVT                                      saed32lvt_ss0p75v125c
+        NAND2X0_LVT                                    saed32lvt_ss0p75v125c
+        NAND3X0_LVT                                    saed32lvt_ss0p75v125c
+        NBUFFX2_LVT                                    saed32lvt_ss0p75v125c
+        NOR2X0_LVT                                     saed32lvt_ss0p75v125c
+        NOR3X0_LVT                                     saed32lvt_ss0p75v125c
+        NOR4X1_LVT                                     saed32lvt_ss0p75v125c
+        OA21X1_LVT                                     saed32lvt_ss0p75v125c
+        OR2X1_LVT                                      saed32lvt_ss0p75v125c
+        OR3X1_LVT                                      saed32lvt_ss0p75v125c
+        OR4X1_LVT                                      saed32lvt_ss0p75v125c
+        XNOR2X1_LVT                                    saed32lvt_ss0p75v125c
+        XOR2X1_LVT                                     saed32lvt_ss0p75v125c
+    DMAC_INITIATOR_2
+        AND2X1_LVT                                     saed32lvt_ss0p75v125c
+        AND4X1_LVT                                     saed32lvt_ss0p75v125c
+        AO21X1_LVT                                     saed32lvt_ss0p75v125c
+        AO221X1_LVT                                    saed32lvt_ss0p75v125c
+        AO222X1_LVT                                    saed32lvt_ss0p75v125c
+        DFFARX1_LVT                                    saed32lvt_ss0p75v125c
+        DMAC_INITIATOR_2_DW01_add_0_DW01_add_4
+            AND2X1_LVT                                 saed32lvt_ss0p75v125c
+            INVX1_LVT                                  saed32lvt_ss0p75v125c
+            NAND2X0_LVT                                saed32lvt_ss0p75v125c
+            XNOR2X1_LVT                                saed32lvt_ss0p75v125c
+            XOR2X1_LVT                                 saed32lvt_ss0p75v125c
+        DMAC_INITIATOR_2_DW01_add_1_DW01_add_5
+            AND2X1_LVT                                 saed32lvt_ss0p75v125c
+            INVX1_LVT                                  saed32lvt_ss0p75v125c
+            NAND2X0_LVT                                saed32lvt_ss0p75v125c
+            XNOR2X1_LVT                                saed32lvt_ss0p75v125c
+            XOR2X1_LVT                                 saed32lvt_ss0p75v125c
+        INVX0_LVT                                      saed32lvt_ss0p75v125c
+        INVX1_LVT                                      saed32lvt_ss0p75v125c
+        NAND2X0_LVT                                    saed32lvt_ss0p75v125c
+        NAND3X0_LVT                                    saed32lvt_ss0p75v125c
+        NAND4X0_LVT                                    saed32lvt_ss0p75v125c
+        NBUFFX2_LVT                                    saed32lvt_ss0p75v125c
+        NOR2X0_LVT                                     saed32lvt_ss0p75v125c
+        NOR3X0_LVT                                     saed32lvt_ss0p75v125c
+        NOR4X1_LVT                                     saed32lvt_ss0p75v125c
+        OAI21X1_LVT                                    saed32lvt_ss0p75v125c
+        OR2X1_LVT                                      saed32lvt_ss0p75v125c
+        OR4X1_LVT                                      saed32lvt_ss0p75v125c
+        XNOR2X1_LVT                                    saed32lvt_ss0p75v125c
+        XOR2X1_LVT                                     saed32lvt_ss0p75v125c
+    DMAC_INITIATOR_3
+        AND2X1_LVT                                     saed32lvt_ss0p75v125c
+        AND3X1_LVT                                     saed32lvt_ss0p75v125c
+        AND4X1_LVT                                     saed32lvt_ss0p75v125c
+        AO21X1_LVT                                     saed32lvt_ss0p75v125c
+        AO221X1_LVT                                    saed32lvt_ss0p75v125c
+        AO222X1_LVT                                    saed32lvt_ss0p75v125c
+        DFFARX1_LVT                                    saed32lvt_ss0p75v125c
+        DMAC_INITIATOR_3_DW01_add_0_DW01_add_6
+            AND2X1_LVT                                 saed32lvt_ss0p75v125c
+            INVX1_LVT                                  saed32lvt_ss0p75v125c
+            NAND2X0_LVT                                saed32lvt_ss0p75v125c
+            XNOR2X1_LVT                                saed32lvt_ss0p75v125c
+            XOR2X1_LVT                                 saed32lvt_ss0p75v125c
+        DMAC_INITIATOR_3_DW01_add_1_DW01_add_7
+            AND2X1_LVT                                 saed32lvt_ss0p75v125c
+            INVX1_LVT                                  saed32lvt_ss0p75v125c
+            NAND2X0_LVT                                saed32lvt_ss0p75v125c
+            XNOR2X1_LVT                                saed32lvt_ss0p75v125c
+            XOR2X1_LVT                                 saed32lvt_ss0p75v125c
+        IBUFFX2_LVT                                    saed32lvt_ss0p75v125c
+        INVX0_LVT                                      saed32lvt_ss0p75v125c
+        INVX1_LVT                                      saed32lvt_ss0p75v125c
+        NAND2X0_LVT                                    saed32lvt_ss0p75v125c
+        NAND3X0_LVT                                    saed32lvt_ss0p75v125c
+        NAND4X0_LVT                                    saed32lvt_ss0p75v125c
+        NBUFFX2_LVT                                    saed32lvt_ss0p75v125c
+        NOR2X0_LVT                                     saed32lvt_ss0p75v125c
+        NOR3X0_LVT                                     saed32lvt_ss0p75v125c
+        NOR4X1_LVT                                     saed32lvt_ss0p75v125c
+        OAI21X1_LVT                                    saed32lvt_ss0p75v125c
+        OR2X1_LVT                                      saed32lvt_ss0p75v125c
+        OR4X1_LVT                                      saed32lvt_ss0p75v125c
+        XNOR2X1_LVT                                    saed32lvt_ss0p75v125c
+        XOR2X1_LVT                                     saed32lvt_ss0p75v125c
+    IBUFFX2_LVT                                        saed32lvt_ss0p75v125c
+    INVX0_LVT                                          saed32lvt_ss0p75v125c
+    INVX1_LVT                                          saed32lvt_ss0p75v125c
+    NAND2X0_LVT                                        saed32lvt_ss0p75v125c
+    NAND3X0_LVT                                        saed32lvt_ss0p75v125c
+    NAND4X0_LVT                                        saed32lvt_ss0p75v125c
+    NBUFFX2_LVT                                        saed32lvt_ss0p75v125c
+    NOR2X0_LVT                                         saed32lvt_ss0p75v125c
+    OR2X1_LVT                                          saed32lvt_ss0p75v125c
+    OR2X2_LVT                                          saed32lvt_ss0p75v125c
+1

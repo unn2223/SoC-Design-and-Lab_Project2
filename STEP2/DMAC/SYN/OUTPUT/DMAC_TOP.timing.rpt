@@ -1,0 +1,778 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nworst 10
+        -max_paths 10
+Design : DMAC_TOP
+Version: Q-2019.12-SP5-5
+Date   : Thu Dec  4 23:41:48 2025
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: ss0p75v125c   Library: saed32lvt_ss0p75v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: u_data_fifo/full_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_aw_fifo/mem_reg[5][8]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DMAC_TOP           35000                 saed32lvt_ss0p75v125c
+  DMAC_INITIATOR_1   8000                  saed32lvt_ss0p75v125c
+  DMAC_ARBITER_N_MASTER4_DATA_SIZE45
+                     8000                  saed32lvt_ss0p75v125c
+  DMAC_FIFO_DEPTH_LG24_DATA_WIDTH40
+                     16000                 saed32lvt_ss0p75v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_data_fifo/full_reg/CLK (DFFX1_LVT)                    0.00 #     0.00 r
+  u_data_fifo/full_reg/Q (DFFX1_LVT)                      0.20       0.20 r
+  u_data_fifo/full_o (DMAC_FIFO_DEPTH_LG24_DATA_WIDTH37)
+                                                          0.00       0.20 r
+  U141/Y (OR2X2_LVT)                                      0.21       0.41 r
+  channel[2].u_initiator/fifo_full_i (DMAC_INITIATOR_1)
+                                                          0.00       0.41 r
+  channel[2].u_initiator/U16/Y (INVX0_LVT)                0.08       0.49 f
+  channel[2].u_initiator/U109/Y (AND2X1_LVT)              0.12       0.61 f
+  channel[2].u_initiator/arvalid_o (DMAC_INITIATOR_1)     0.00       0.61 f
+  u_ar_arbiter/src_valid_i[2] (DMAC_ARBITER_N_MASTER4_DATA_SIZE45)
+                                                          0.00       0.61 f
+  u_ar_arbiter/U81/Y (NBUFFX2_LVT)                        0.11       0.72 f
+  u_ar_arbiter/U80/Y (AO21X1_LVT)                         0.14       0.87 f
+  u_ar_arbiter/U18/Y (AO22X1_LVT)                         0.08       0.95 f
+  u_ar_arbiter/U17/Y (AO221X1_LVT)                        0.18       1.13 f
+  u_ar_arbiter/U83/Y (INVX0_LVT)                          0.47       1.61 r
+  u_ar_arbiter/U32/Y (AND2X1_LVT)                         0.33       1.94 r
+  u_ar_arbiter/U5/Y (NAND2X0_LVT)                         0.10       2.04 f
+  u_ar_arbiter/U8/Y (NAND3X0_LVT)                         0.08       2.12 r
+  u_ar_arbiter/U90/Y (AND2X1_LVT)                         0.21       2.32 r
+  u_ar_arbiter/U19/Y (NAND3X0_LVT)                        0.11       2.44 f
+  u_ar_arbiter/U92/Y (INVX0_LVT)                          0.12       2.55 r
+  u_ar_arbiter/src_ready_o[1] (DMAC_ARBITER_N_MASTER4_DATA_SIZE45)
+                                                          0.00       2.55 r
+  U135/Y (NBUFFX2_LVT)                                    0.13       2.68 r
+  U134/Y (AND2X1_LVT)                                     0.12       2.80 r
+  U160/Y (NBUFFX2_LVT)                                    0.13       2.93 r
+  U161/Y (NBUFFX2_LVT)                                    0.47       3.40 r
+  U165/Y (NBUFFX2_LVT)                                    0.48       3.89 r
+  U163/Y (NBUFFX2_LVT)                                    0.99       4.87 r
+  U149/Y (NAND2X0_LVT)                                    0.29       5.17 f
+  U150/Y (NAND3X0_LVT)                                    0.07       5.24 r
+  u_aw_fifo/wdata_i[8] (DMAC_FIFO_DEPTH_LG24_DATA_WIDTH40)
+                                                          0.00       5.24 r
+  u_aw_fifo/U677/Y (AND2X1_LVT)                           0.10       5.34 r
+  u_aw_fifo/U683/Y (NBUFFX2_LVT)                          0.28       5.61 r
+  u_aw_fifo/U762/Y (NBUFFX2_LVT)                          0.17       5.79 r
+  u_aw_fifo/U1161/Y (NBUFFX2_LVT)                         0.18       5.97 r
+  u_aw_fifo/U252/Y (AO22X1_LVT)                           0.44       6.41 r
+  u_aw_fifo/mem_reg[5][8]/D (DFFX1_LVT)                   0.01       6.42 r
+  data arrival time                                                  6.42
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -3.50       6.50
+  u_aw_fifo/mem_reg[5][8]/CLK (DFFX1_LVT)                 0.00       6.50 r
+  library setup time                                     -0.08       6.42
+  data required time                                                 6.42
+  --------------------------------------------------------------------------
+  data required time                                                 6.42
+  data arrival time                                                 -6.42
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: u_data_fifo/full_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_aw_fifo/mem_reg[14][8]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DMAC_TOP           35000                 saed32lvt_ss0p75v125c
+  DMAC_INITIATOR_1   8000                  saed32lvt_ss0p75v125c
+  DMAC_ARBITER_N_MASTER4_DATA_SIZE45
+                     8000                  saed32lvt_ss0p75v125c
+  DMAC_FIFO_DEPTH_LG24_DATA_WIDTH40
+                     16000                 saed32lvt_ss0p75v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_data_fifo/full_reg/CLK (DFFX1_LVT)                    0.00 #     0.00 r
+  u_data_fifo/full_reg/Q (DFFX1_LVT)                      0.20       0.20 r
+  u_data_fifo/full_o (DMAC_FIFO_DEPTH_LG24_DATA_WIDTH37)
+                                                          0.00       0.20 r
+  U141/Y (OR2X2_LVT)                                      0.21       0.41 r
+  channel[2].u_initiator/fifo_full_i (DMAC_INITIATOR_1)
+                                                          0.00       0.41 r
+  channel[2].u_initiator/U16/Y (INVX0_LVT)                0.08       0.49 f
+  channel[2].u_initiator/U109/Y (AND2X1_LVT)              0.12       0.61 f
+  channel[2].u_initiator/arvalid_o (DMAC_INITIATOR_1)     0.00       0.61 f
+  u_ar_arbiter/src_valid_i[2] (DMAC_ARBITER_N_MASTER4_DATA_SIZE45)
+                                                          0.00       0.61 f
+  u_ar_arbiter/U81/Y (NBUFFX2_LVT)                        0.11       0.72 f
+  u_ar_arbiter/U80/Y (AO21X1_LVT)                         0.14       0.87 f
+  u_ar_arbiter/U18/Y (AO22X1_LVT)                         0.08       0.95 f
+  u_ar_arbiter/U17/Y (AO221X1_LVT)                        0.18       1.13 f
+  u_ar_arbiter/U83/Y (INVX0_LVT)                          0.47       1.61 r
+  u_ar_arbiter/U32/Y (AND2X1_LVT)                         0.33       1.94 r
+  u_ar_arbiter/U5/Y (NAND2X0_LVT)                         0.10       2.04 f
+  u_ar_arbiter/U8/Y (NAND3X0_LVT)                         0.08       2.12 r
+  u_ar_arbiter/U90/Y (AND2X1_LVT)                         0.21       2.32 r
+  u_ar_arbiter/U19/Y (NAND3X0_LVT)                        0.11       2.44 f
+  u_ar_arbiter/U92/Y (INVX0_LVT)                          0.12       2.55 r
+  u_ar_arbiter/src_ready_o[1] (DMAC_ARBITER_N_MASTER4_DATA_SIZE45)
+                                                          0.00       2.55 r
+  U135/Y (NBUFFX2_LVT)                                    0.13       2.68 r
+  U134/Y (AND2X1_LVT)                                     0.12       2.80 r
+  U160/Y (NBUFFX2_LVT)                                    0.13       2.93 r
+  U161/Y (NBUFFX2_LVT)                                    0.47       3.40 r
+  U165/Y (NBUFFX2_LVT)                                    0.48       3.89 r
+  U163/Y (NBUFFX2_LVT)                                    0.99       4.87 r
+  U149/Y (NAND2X0_LVT)                                    0.29       5.17 f
+  U150/Y (NAND3X0_LVT)                                    0.07       5.24 r
+  u_aw_fifo/wdata_i[8] (DMAC_FIFO_DEPTH_LG24_DATA_WIDTH40)
+                                                          0.00       5.24 r
+  u_aw_fifo/U677/Y (AND2X1_LVT)                           0.10       5.34 r
+  u_aw_fifo/U683/Y (NBUFFX2_LVT)                          0.28       5.61 r
+  u_aw_fifo/U762/Y (NBUFFX2_LVT)                          0.17       5.79 r
+  u_aw_fifo/U1161/Y (NBUFFX2_LVT)                         0.18       5.97 r
+  u_aw_fifo/U627/Y (AO22X1_LVT)                           0.44       6.41 r
+  u_aw_fifo/mem_reg[14][8]/D (DFFX1_LVT)                  0.01       6.42 r
+  data arrival time                                                  6.42
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -3.50       6.50
+  u_aw_fifo/mem_reg[14][8]/CLK (DFFX1_LVT)                0.00       6.50 r
+  library setup time                                     -0.08       6.42
+  data required time                                                 6.42
+  --------------------------------------------------------------------------
+  data required time                                                 6.42
+  data arrival time                                                 -6.42
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: u_data_fifo/full_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_aw_fifo/mem_reg[10][8]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DMAC_TOP           35000                 saed32lvt_ss0p75v125c
+  DMAC_INITIATOR_1   8000                  saed32lvt_ss0p75v125c
+  DMAC_ARBITER_N_MASTER4_DATA_SIZE45
+                     8000                  saed32lvt_ss0p75v125c
+  DMAC_FIFO_DEPTH_LG24_DATA_WIDTH40
+                     16000                 saed32lvt_ss0p75v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_data_fifo/full_reg/CLK (DFFX1_LVT)                    0.00 #     0.00 r
+  u_data_fifo/full_reg/Q (DFFX1_LVT)                      0.20       0.20 r
+  u_data_fifo/full_o (DMAC_FIFO_DEPTH_LG24_DATA_WIDTH37)
+                                                          0.00       0.20 r
+  U141/Y (OR2X2_LVT)                                      0.21       0.41 r
+  channel[2].u_initiator/fifo_full_i (DMAC_INITIATOR_1)
+                                                          0.00       0.41 r
+  channel[2].u_initiator/U16/Y (INVX0_LVT)                0.08       0.49 f
+  channel[2].u_initiator/U109/Y (AND2X1_LVT)              0.12       0.61 f
+  channel[2].u_initiator/arvalid_o (DMAC_INITIATOR_1)     0.00       0.61 f
+  u_ar_arbiter/src_valid_i[2] (DMAC_ARBITER_N_MASTER4_DATA_SIZE45)
+                                                          0.00       0.61 f
+  u_ar_arbiter/U81/Y (NBUFFX2_LVT)                        0.11       0.72 f
+  u_ar_arbiter/U80/Y (AO21X1_LVT)                         0.14       0.87 f
+  u_ar_arbiter/U18/Y (AO22X1_LVT)                         0.08       0.95 f
+  u_ar_arbiter/U17/Y (AO221X1_LVT)                        0.18       1.13 f
+  u_ar_arbiter/U83/Y (INVX0_LVT)                          0.47       1.61 r
+  u_ar_arbiter/U32/Y (AND2X1_LVT)                         0.33       1.94 r
+  u_ar_arbiter/U5/Y (NAND2X0_LVT)                         0.10       2.04 f
+  u_ar_arbiter/U8/Y (NAND3X0_LVT)                         0.08       2.12 r
+  u_ar_arbiter/U90/Y (AND2X1_LVT)                         0.21       2.32 r
+  u_ar_arbiter/U19/Y (NAND3X0_LVT)                        0.11       2.44 f
+  u_ar_arbiter/U92/Y (INVX0_LVT)                          0.12       2.55 r
+  u_ar_arbiter/src_ready_o[1] (DMAC_ARBITER_N_MASTER4_DATA_SIZE45)
+                                                          0.00       2.55 r
+  U135/Y (NBUFFX2_LVT)                                    0.13       2.68 r
+  U134/Y (AND2X1_LVT)                                     0.12       2.80 r
+  U160/Y (NBUFFX2_LVT)                                    0.13       2.93 r
+  U161/Y (NBUFFX2_LVT)                                    0.47       3.40 r
+  U165/Y (NBUFFX2_LVT)                                    0.48       3.89 r
+  U163/Y (NBUFFX2_LVT)                                    0.99       4.87 r
+  U149/Y (NAND2X0_LVT)                                    0.29       5.17 f
+  U150/Y (NAND3X0_LVT)                                    0.07       5.24 r
+  u_aw_fifo/wdata_i[8] (DMAC_FIFO_DEPTH_LG24_DATA_WIDTH40)
+                                                          0.00       5.24 r
+  u_aw_fifo/U677/Y (AND2X1_LVT)                           0.10       5.34 r
+  u_aw_fifo/U683/Y (NBUFFX2_LVT)                          0.28       5.61 r
+  u_aw_fifo/U762/Y (NBUFFX2_LVT)                          0.17       5.79 r
+  u_aw_fifo/U1157/Y (NBUFFX2_LVT)                         0.18       5.97 r
+  u_aw_fifo/U461/Y (AO22X1_LVT)                           0.44       6.41 r
+  u_aw_fifo/mem_reg[10][8]/D (DFFX1_LVT)                  0.01       6.42 r
+  data arrival time                                                  6.42
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -3.50       6.50
+  u_aw_fifo/mem_reg[10][8]/CLK (DFFX1_LVT)                0.00       6.50 r
+  library setup time                                     -0.08       6.42
+  data required time                                                 6.42
+  --------------------------------------------------------------------------
+  data required time                                                 6.42
+  data arrival time                                                 -6.42
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: u_data_fifo/full_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_aw_fifo/mem_reg[4][8]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DMAC_TOP           35000                 saed32lvt_ss0p75v125c
+  DMAC_INITIATOR_1   8000                  saed32lvt_ss0p75v125c
+  DMAC_ARBITER_N_MASTER4_DATA_SIZE45
+                     8000                  saed32lvt_ss0p75v125c
+  DMAC_FIFO_DEPTH_LG24_DATA_WIDTH40
+                     16000                 saed32lvt_ss0p75v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_data_fifo/full_reg/CLK (DFFX1_LVT)                    0.00 #     0.00 r
+  u_data_fifo/full_reg/Q (DFFX1_LVT)                      0.20       0.20 r
+  u_data_fifo/full_o (DMAC_FIFO_DEPTH_LG24_DATA_WIDTH37)
+                                                          0.00       0.20 r
+  U141/Y (OR2X2_LVT)                                      0.21       0.41 r
+  channel[2].u_initiator/fifo_full_i (DMAC_INITIATOR_1)
+                                                          0.00       0.41 r
+  channel[2].u_initiator/U16/Y (INVX0_LVT)                0.08       0.49 f
+  channel[2].u_initiator/U109/Y (AND2X1_LVT)              0.12       0.61 f
+  channel[2].u_initiator/arvalid_o (DMAC_INITIATOR_1)     0.00       0.61 f
+  u_ar_arbiter/src_valid_i[2] (DMAC_ARBITER_N_MASTER4_DATA_SIZE45)
+                                                          0.00       0.61 f
+  u_ar_arbiter/U81/Y (NBUFFX2_LVT)                        0.11       0.72 f
+  u_ar_arbiter/U80/Y (AO21X1_LVT)                         0.14       0.87 f
+  u_ar_arbiter/U18/Y (AO22X1_LVT)                         0.08       0.95 f
+  u_ar_arbiter/U17/Y (AO221X1_LVT)                        0.18       1.13 f
+  u_ar_arbiter/U83/Y (INVX0_LVT)                          0.47       1.61 r
+  u_ar_arbiter/U32/Y (AND2X1_LVT)                         0.33       1.94 r
+  u_ar_arbiter/U5/Y (NAND2X0_LVT)                         0.10       2.04 f
+  u_ar_arbiter/U8/Y (NAND3X0_LVT)                         0.08       2.12 r
+  u_ar_arbiter/U90/Y (AND2X1_LVT)                         0.21       2.32 r
+  u_ar_arbiter/U19/Y (NAND3X0_LVT)                        0.11       2.44 f
+  u_ar_arbiter/U92/Y (INVX0_LVT)                          0.12       2.55 r
+  u_ar_arbiter/src_ready_o[1] (DMAC_ARBITER_N_MASTER4_DATA_SIZE45)
+                                                          0.00       2.55 r
+  U135/Y (NBUFFX2_LVT)                                    0.13       2.68 r
+  U134/Y (AND2X1_LVT)                                     0.12       2.80 r
+  U160/Y (NBUFFX2_LVT)                                    0.13       2.93 r
+  U161/Y (NBUFFX2_LVT)                                    0.47       3.40 r
+  U165/Y (NBUFFX2_LVT)                                    0.48       3.89 r
+  U163/Y (NBUFFX2_LVT)                                    0.99       4.87 r
+  U149/Y (NAND2X0_LVT)                                    0.29       5.17 f
+  U150/Y (NAND3X0_LVT)                                    0.07       5.24 r
+  u_aw_fifo/wdata_i[8] (DMAC_FIFO_DEPTH_LG24_DATA_WIDTH40)
+                                                          0.00       5.24 r
+  u_aw_fifo/U677/Y (AND2X1_LVT)                           0.10       5.34 r
+  u_aw_fifo/U683/Y (NBUFFX2_LVT)                          0.28       5.61 r
+  u_aw_fifo/U762/Y (NBUFFX2_LVT)                          0.17       5.79 r
+  u_aw_fifo/U1157/Y (NBUFFX2_LVT)                         0.18       5.97 r
+  u_aw_fifo/U211/Y (AO22X1_LVT)                           0.44       6.41 r
+  u_aw_fifo/mem_reg[4][8]/D (DFFX1_LVT)                   0.01       6.42 r
+  data arrival time                                                  6.42
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -3.50       6.50
+  u_aw_fifo/mem_reg[4][8]/CLK (DFFX1_LVT)                 0.00       6.50 r
+  library setup time                                     -0.08       6.42
+  data required time                                                 6.42
+  --------------------------------------------------------------------------
+  data required time                                                 6.42
+  data arrival time                                                 -6.42
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: u_data_fifo/full_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_aw_fifo/mem_reg[8][8]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DMAC_TOP           35000                 saed32lvt_ss0p75v125c
+  DMAC_INITIATOR_1   8000                  saed32lvt_ss0p75v125c
+  DMAC_ARBITER_N_MASTER4_DATA_SIZE45
+                     8000                  saed32lvt_ss0p75v125c
+  DMAC_FIFO_DEPTH_LG24_DATA_WIDTH40
+                     16000                 saed32lvt_ss0p75v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_data_fifo/full_reg/CLK (DFFX1_LVT)                    0.00 #     0.00 r
+  u_data_fifo/full_reg/Q (DFFX1_LVT)                      0.20       0.20 r
+  u_data_fifo/full_o (DMAC_FIFO_DEPTH_LG24_DATA_WIDTH37)
+                                                          0.00       0.20 r
+  U141/Y (OR2X2_LVT)                                      0.21       0.41 r
+  channel[2].u_initiator/fifo_full_i (DMAC_INITIATOR_1)
+                                                          0.00       0.41 r
+  channel[2].u_initiator/U16/Y (INVX0_LVT)                0.08       0.49 f
+  channel[2].u_initiator/U109/Y (AND2X1_LVT)              0.12       0.61 f
+  channel[2].u_initiator/arvalid_o (DMAC_INITIATOR_1)     0.00       0.61 f
+  u_ar_arbiter/src_valid_i[2] (DMAC_ARBITER_N_MASTER4_DATA_SIZE45)
+                                                          0.00       0.61 f
+  u_ar_arbiter/U81/Y (NBUFFX2_LVT)                        0.11       0.72 f
+  u_ar_arbiter/U80/Y (AO21X1_LVT)                         0.14       0.87 f
+  u_ar_arbiter/U18/Y (AO22X1_LVT)                         0.08       0.95 f
+  u_ar_arbiter/U17/Y (AO221X1_LVT)                        0.18       1.13 f
+  u_ar_arbiter/U83/Y (INVX0_LVT)                          0.47       1.61 r
+  u_ar_arbiter/U32/Y (AND2X1_LVT)                         0.33       1.94 r
+  u_ar_arbiter/U5/Y (NAND2X0_LVT)                         0.10       2.04 f
+  u_ar_arbiter/U8/Y (NAND3X0_LVT)                         0.08       2.12 r
+  u_ar_arbiter/U90/Y (AND2X1_LVT)                         0.21       2.32 r
+  u_ar_arbiter/U19/Y (NAND3X0_LVT)                        0.11       2.44 f
+  u_ar_arbiter/U92/Y (INVX0_LVT)                          0.12       2.55 r
+  u_ar_arbiter/src_ready_o[1] (DMAC_ARBITER_N_MASTER4_DATA_SIZE45)
+                                                          0.00       2.55 r
+  U135/Y (NBUFFX2_LVT)                                    0.13       2.68 r
+  U134/Y (AND2X1_LVT)                                     0.12       2.80 r
+  U160/Y (NBUFFX2_LVT)                                    0.13       2.93 r
+  U161/Y (NBUFFX2_LVT)                                    0.47       3.40 r
+  U165/Y (NBUFFX2_LVT)                                    0.48       3.89 r
+  U163/Y (NBUFFX2_LVT)                                    0.99       4.87 r
+  U149/Y (NAND2X0_LVT)                                    0.29       5.17 f
+  U150/Y (NAND3X0_LVT)                                    0.07       5.24 r
+  u_aw_fifo/wdata_i[8] (DMAC_FIFO_DEPTH_LG24_DATA_WIDTH40)
+                                                          0.00       5.24 r
+  u_aw_fifo/U677/Y (AND2X1_LVT)                           0.10       5.34 r
+  u_aw_fifo/U683/Y (NBUFFX2_LVT)                          0.28       5.61 r
+  u_aw_fifo/U762/Y (NBUFFX2_LVT)                          0.17       5.79 r
+  u_aw_fifo/U1161/Y (NBUFFX2_LVT)                         0.18       5.97 r
+  u_aw_fifo/U593/Y (AO22X1_LVT)                           0.44       6.41 r
+  u_aw_fifo/mem_reg[8][8]/D (DFFX1_LVT)                   0.01       6.42 r
+  data arrival time                                                  6.42
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -3.50       6.50
+  u_aw_fifo/mem_reg[8][8]/CLK (DFFX1_LVT)                 0.00       6.50 r
+  library setup time                                     -0.08       6.42
+  data required time                                                 6.42
+  --------------------------------------------------------------------------
+  data required time                                                 6.42
+  data arrival time                                                 -6.42
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: u_data_fifo/full_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_aw_fifo/mem_reg[7][8]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DMAC_TOP           35000                 saed32lvt_ss0p75v125c
+  DMAC_INITIATOR_1   8000                  saed32lvt_ss0p75v125c
+  DMAC_ARBITER_N_MASTER4_DATA_SIZE45
+                     8000                  saed32lvt_ss0p75v125c
+  DMAC_FIFO_DEPTH_LG24_DATA_WIDTH40
+                     16000                 saed32lvt_ss0p75v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_data_fifo/full_reg/CLK (DFFX1_LVT)                    0.00 #     0.00 r
+  u_data_fifo/full_reg/Q (DFFX1_LVT)                      0.20       0.20 r
+  u_data_fifo/full_o (DMAC_FIFO_DEPTH_LG24_DATA_WIDTH37)
+                                                          0.00       0.20 r
+  U141/Y (OR2X2_LVT)                                      0.21       0.41 r
+  channel[2].u_initiator/fifo_full_i (DMAC_INITIATOR_1)
+                                                          0.00       0.41 r
+  channel[2].u_initiator/U16/Y (INVX0_LVT)                0.08       0.49 f
+  channel[2].u_initiator/U109/Y (AND2X1_LVT)              0.12       0.61 f
+  channel[2].u_initiator/arvalid_o (DMAC_INITIATOR_1)     0.00       0.61 f
+  u_ar_arbiter/src_valid_i[2] (DMAC_ARBITER_N_MASTER4_DATA_SIZE45)
+                                                          0.00       0.61 f
+  u_ar_arbiter/U81/Y (NBUFFX2_LVT)                        0.11       0.72 f
+  u_ar_arbiter/U80/Y (AO21X1_LVT)                         0.14       0.87 f
+  u_ar_arbiter/U18/Y (AO22X1_LVT)                         0.08       0.95 f
+  u_ar_arbiter/U17/Y (AO221X1_LVT)                        0.18       1.13 f
+  u_ar_arbiter/U83/Y (INVX0_LVT)                          0.47       1.61 r
+  u_ar_arbiter/U32/Y (AND2X1_LVT)                         0.33       1.94 r
+  u_ar_arbiter/U5/Y (NAND2X0_LVT)                         0.10       2.04 f
+  u_ar_arbiter/U8/Y (NAND3X0_LVT)                         0.08       2.12 r
+  u_ar_arbiter/U90/Y (AND2X1_LVT)                         0.21       2.32 r
+  u_ar_arbiter/U19/Y (NAND3X0_LVT)                        0.11       2.44 f
+  u_ar_arbiter/U92/Y (INVX0_LVT)                          0.12       2.55 r
+  u_ar_arbiter/src_ready_o[1] (DMAC_ARBITER_N_MASTER4_DATA_SIZE45)
+                                                          0.00       2.55 r
+  U135/Y (NBUFFX2_LVT)                                    0.13       2.68 r
+  U134/Y (AND2X1_LVT)                                     0.12       2.80 r
+  U160/Y (NBUFFX2_LVT)                                    0.13       2.93 r
+  U161/Y (NBUFFX2_LVT)                                    0.47       3.40 r
+  U165/Y (NBUFFX2_LVT)                                    0.48       3.89 r
+  U163/Y (NBUFFX2_LVT)                                    0.99       4.87 r
+  U149/Y (NAND2X0_LVT)                                    0.29       5.17 f
+  U150/Y (NAND3X0_LVT)                                    0.07       5.24 r
+  u_aw_fifo/wdata_i[8] (DMAC_FIFO_DEPTH_LG24_DATA_WIDTH40)
+                                                          0.00       5.24 r
+  u_aw_fifo/U677/Y (AND2X1_LVT)                           0.10       5.34 r
+  u_aw_fifo/U683/Y (NBUFFX2_LVT)                          0.28       5.61 r
+  u_aw_fifo/U762/Y (NBUFFX2_LVT)                          0.17       5.79 r
+  u_aw_fifo/U1157/Y (NBUFFX2_LVT)                         0.18       5.97 r
+  u_aw_fifo/U335/Y (AO22X1_LVT)                           0.44       6.41 r
+  u_aw_fifo/mem_reg[7][8]/D (DFFX1_LVT)                   0.01       6.42 r
+  data arrival time                                                  6.42
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -3.50       6.50
+  u_aw_fifo/mem_reg[7][8]/CLK (DFFX1_LVT)                 0.00       6.50 r
+  library setup time                                     -0.08       6.42
+  data required time                                                 6.42
+  --------------------------------------------------------------------------
+  data required time                                                 6.42
+  data arrival time                                                 -6.42
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: u_data_fifo/full_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_aw_fifo/mem_reg[1][8]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DMAC_TOP           35000                 saed32lvt_ss0p75v125c
+  DMAC_INITIATOR_1   8000                  saed32lvt_ss0p75v125c
+  DMAC_ARBITER_N_MASTER4_DATA_SIZE45
+                     8000                  saed32lvt_ss0p75v125c
+  DMAC_FIFO_DEPTH_LG24_DATA_WIDTH40
+                     16000                 saed32lvt_ss0p75v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_data_fifo/full_reg/CLK (DFFX1_LVT)                    0.00 #     0.00 r
+  u_data_fifo/full_reg/Q (DFFX1_LVT)                      0.20       0.20 r
+  u_data_fifo/full_o (DMAC_FIFO_DEPTH_LG24_DATA_WIDTH37)
+                                                          0.00       0.20 r
+  U141/Y (OR2X2_LVT)                                      0.21       0.41 r
+  channel[2].u_initiator/fifo_full_i (DMAC_INITIATOR_1)
+                                                          0.00       0.41 r
+  channel[2].u_initiator/U16/Y (INVX0_LVT)                0.08       0.49 f
+  channel[2].u_initiator/U109/Y (AND2X1_LVT)              0.12       0.61 f
+  channel[2].u_initiator/arvalid_o (DMAC_INITIATOR_1)     0.00       0.61 f
+  u_ar_arbiter/src_valid_i[2] (DMAC_ARBITER_N_MASTER4_DATA_SIZE45)
+                                                          0.00       0.61 f
+  u_ar_arbiter/U81/Y (NBUFFX2_LVT)                        0.11       0.72 f
+  u_ar_arbiter/U80/Y (AO21X1_LVT)                         0.14       0.87 f
+  u_ar_arbiter/U18/Y (AO22X1_LVT)                         0.08       0.95 f
+  u_ar_arbiter/U17/Y (AO221X1_LVT)                        0.18       1.13 f
+  u_ar_arbiter/U83/Y (INVX0_LVT)                          0.47       1.61 r
+  u_ar_arbiter/U32/Y (AND2X1_LVT)                         0.33       1.94 r
+  u_ar_arbiter/U5/Y (NAND2X0_LVT)                         0.10       2.04 f
+  u_ar_arbiter/U8/Y (NAND3X0_LVT)                         0.08       2.12 r
+  u_ar_arbiter/U90/Y (AND2X1_LVT)                         0.21       2.32 r
+  u_ar_arbiter/U19/Y (NAND3X0_LVT)                        0.11       2.44 f
+  u_ar_arbiter/U92/Y (INVX0_LVT)                          0.12       2.55 r
+  u_ar_arbiter/src_ready_o[1] (DMAC_ARBITER_N_MASTER4_DATA_SIZE45)
+                                                          0.00       2.55 r
+  U135/Y (NBUFFX2_LVT)                                    0.13       2.68 r
+  U134/Y (AND2X1_LVT)                                     0.12       2.80 r
+  U160/Y (NBUFFX2_LVT)                                    0.13       2.93 r
+  U161/Y (NBUFFX2_LVT)                                    0.47       3.40 r
+  U165/Y (NBUFFX2_LVT)                                    0.48       3.89 r
+  U163/Y (NBUFFX2_LVT)                                    0.99       4.87 r
+  U149/Y (NAND2X0_LVT)                                    0.29       5.17 f
+  U150/Y (NAND3X0_LVT)                                    0.07       5.24 r
+  u_aw_fifo/wdata_i[8] (DMAC_FIFO_DEPTH_LG24_DATA_WIDTH40)
+                                                          0.00       5.24 r
+  u_aw_fifo/U677/Y (AND2X1_LVT)                           0.10       5.34 r
+  u_aw_fifo/U683/Y (NBUFFX2_LVT)                          0.28       5.61 r
+  u_aw_fifo/U762/Y (NBUFFX2_LVT)                          0.17       5.79 r
+  u_aw_fifo/U1157/Y (NBUFFX2_LVT)                         0.18       5.97 r
+  u_aw_fifo/U88/Y (AO22X1_LVT)                            0.44       6.41 r
+  u_aw_fifo/mem_reg[1][8]/D (DFFX1_LVT)                   0.01       6.42 r
+  data arrival time                                                  6.42
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -3.50       6.50
+  u_aw_fifo/mem_reg[1][8]/CLK (DFFX1_LVT)                 0.00       6.50 r
+  library setup time                                     -0.08       6.42
+  data required time                                                 6.42
+  --------------------------------------------------------------------------
+  data required time                                                 6.42
+  data arrival time                                                 -6.42
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: u_data_fifo/full_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_aw_fifo/mem_reg[11][8]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DMAC_TOP           35000                 saed32lvt_ss0p75v125c
+  DMAC_INITIATOR_1   8000                  saed32lvt_ss0p75v125c
+  DMAC_ARBITER_N_MASTER4_DATA_SIZE45
+                     8000                  saed32lvt_ss0p75v125c
+  DMAC_FIFO_DEPTH_LG24_DATA_WIDTH40
+                     16000                 saed32lvt_ss0p75v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_data_fifo/full_reg/CLK (DFFX1_LVT)                    0.00 #     0.00 r
+  u_data_fifo/full_reg/Q (DFFX1_LVT)                      0.20       0.20 r
+  u_data_fifo/full_o (DMAC_FIFO_DEPTH_LG24_DATA_WIDTH37)
+                                                          0.00       0.20 r
+  U141/Y (OR2X2_LVT)                                      0.21       0.41 r
+  channel[2].u_initiator/fifo_full_i (DMAC_INITIATOR_1)
+                                                          0.00       0.41 r
+  channel[2].u_initiator/U16/Y (INVX0_LVT)                0.08       0.49 f
+  channel[2].u_initiator/U109/Y (AND2X1_LVT)              0.12       0.61 f
+  channel[2].u_initiator/arvalid_o (DMAC_INITIATOR_1)     0.00       0.61 f
+  u_ar_arbiter/src_valid_i[2] (DMAC_ARBITER_N_MASTER4_DATA_SIZE45)
+                                                          0.00       0.61 f
+  u_ar_arbiter/U81/Y (NBUFFX2_LVT)                        0.11       0.72 f
+  u_ar_arbiter/U80/Y (AO21X1_LVT)                         0.14       0.87 f
+  u_ar_arbiter/U18/Y (AO22X1_LVT)                         0.08       0.95 f
+  u_ar_arbiter/U17/Y (AO221X1_LVT)                        0.18       1.13 f
+  u_ar_arbiter/U83/Y (INVX0_LVT)                          0.47       1.61 r
+  u_ar_arbiter/U32/Y (AND2X1_LVT)                         0.33       1.94 r
+  u_ar_arbiter/U5/Y (NAND2X0_LVT)                         0.10       2.04 f
+  u_ar_arbiter/U8/Y (NAND3X0_LVT)                         0.08       2.12 r
+  u_ar_arbiter/U90/Y (AND2X1_LVT)                         0.21       2.32 r
+  u_ar_arbiter/U19/Y (NAND3X0_LVT)                        0.11       2.44 f
+  u_ar_arbiter/U92/Y (INVX0_LVT)                          0.12       2.55 r
+  u_ar_arbiter/src_ready_o[1] (DMAC_ARBITER_N_MASTER4_DATA_SIZE45)
+                                                          0.00       2.55 r
+  U135/Y (NBUFFX2_LVT)                                    0.13       2.68 r
+  U134/Y (AND2X1_LVT)                                     0.12       2.80 r
+  U160/Y (NBUFFX2_LVT)                                    0.13       2.93 r
+  U161/Y (NBUFFX2_LVT)                                    0.47       3.40 r
+  U165/Y (NBUFFX2_LVT)                                    0.48       3.89 r
+  U163/Y (NBUFFX2_LVT)                                    0.99       4.87 r
+  U149/Y (NAND2X0_LVT)                                    0.29       5.17 f
+  U150/Y (NAND3X0_LVT)                                    0.07       5.24 r
+  u_aw_fifo/wdata_i[8] (DMAC_FIFO_DEPTH_LG24_DATA_WIDTH40)
+                                                          0.00       5.24 r
+  u_aw_fifo/U677/Y (AND2X1_LVT)                           0.10       5.34 r
+  u_aw_fifo/U683/Y (NBUFFX2_LVT)                          0.28       5.61 r
+  u_aw_fifo/U762/Y (NBUFFX2_LVT)                          0.17       5.79 r
+  u_aw_fifo/U1161/Y (NBUFFX2_LVT)                         0.18       5.97 r
+  u_aw_fifo/U502/Y (AO22X1_LVT)                           0.44       6.41 r
+  u_aw_fifo/mem_reg[11][8]/D (DFFX1_LVT)                  0.01       6.42 r
+  data arrival time                                                  6.42
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -3.50       6.50
+  u_aw_fifo/mem_reg[11][8]/CLK (DFFX1_LVT)                0.00       6.50 r
+  library setup time                                     -0.08       6.42
+  data required time                                                 6.42
+  --------------------------------------------------------------------------
+  data required time                                                 6.42
+  data arrival time                                                 -6.42
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: u_data_fifo/full_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_aw_fifo/mem_reg[13][8]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DMAC_TOP           35000                 saed32lvt_ss0p75v125c
+  DMAC_INITIATOR_1   8000                  saed32lvt_ss0p75v125c
+  DMAC_ARBITER_N_MASTER4_DATA_SIZE45
+                     8000                  saed32lvt_ss0p75v125c
+  DMAC_FIFO_DEPTH_LG24_DATA_WIDTH40
+                     16000                 saed32lvt_ss0p75v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_data_fifo/full_reg/CLK (DFFX1_LVT)                    0.00 #     0.00 r
+  u_data_fifo/full_reg/Q (DFFX1_LVT)                      0.20       0.20 r
+  u_data_fifo/full_o (DMAC_FIFO_DEPTH_LG24_DATA_WIDTH37)
+                                                          0.00       0.20 r
+  U141/Y (OR2X2_LVT)                                      0.21       0.41 r
+  channel[2].u_initiator/fifo_full_i (DMAC_INITIATOR_1)
+                                                          0.00       0.41 r
+  channel[2].u_initiator/U16/Y (INVX0_LVT)                0.08       0.49 f
+  channel[2].u_initiator/U109/Y (AND2X1_LVT)              0.12       0.61 f
+  channel[2].u_initiator/arvalid_o (DMAC_INITIATOR_1)     0.00       0.61 f
+  u_ar_arbiter/src_valid_i[2] (DMAC_ARBITER_N_MASTER4_DATA_SIZE45)
+                                                          0.00       0.61 f
+  u_ar_arbiter/U81/Y (NBUFFX2_LVT)                        0.11       0.72 f
+  u_ar_arbiter/U80/Y (AO21X1_LVT)                         0.14       0.87 f
+  u_ar_arbiter/U18/Y (AO22X1_LVT)                         0.08       0.95 f
+  u_ar_arbiter/U17/Y (AO221X1_LVT)                        0.18       1.13 f
+  u_ar_arbiter/U83/Y (INVX0_LVT)                          0.47       1.61 r
+  u_ar_arbiter/U32/Y (AND2X1_LVT)                         0.33       1.94 r
+  u_ar_arbiter/U5/Y (NAND2X0_LVT)                         0.10       2.04 f
+  u_ar_arbiter/U8/Y (NAND3X0_LVT)                         0.08       2.12 r
+  u_ar_arbiter/U90/Y (AND2X1_LVT)                         0.21       2.32 r
+  u_ar_arbiter/U19/Y (NAND3X0_LVT)                        0.11       2.44 f
+  u_ar_arbiter/U92/Y (INVX0_LVT)                          0.12       2.55 r
+  u_ar_arbiter/src_ready_o[1] (DMAC_ARBITER_N_MASTER4_DATA_SIZE45)
+                                                          0.00       2.55 r
+  U135/Y (NBUFFX2_LVT)                                    0.13       2.68 r
+  U134/Y (AND2X1_LVT)                                     0.12       2.80 r
+  U160/Y (NBUFFX2_LVT)                                    0.13       2.93 r
+  U161/Y (NBUFFX2_LVT)                                    0.47       3.40 r
+  U165/Y (NBUFFX2_LVT)                                    0.48       3.89 r
+  U163/Y (NBUFFX2_LVT)                                    0.99       4.87 r
+  U149/Y (NAND2X0_LVT)                                    0.29       5.17 f
+  U150/Y (NAND3X0_LVT)                                    0.07       5.24 r
+  u_aw_fifo/wdata_i[8] (DMAC_FIFO_DEPTH_LG24_DATA_WIDTH40)
+                                                          0.00       5.24 r
+  u_aw_fifo/U677/Y (AND2X1_LVT)                           0.10       5.34 r
+  u_aw_fifo/U683/Y (NBUFFX2_LVT)                          0.28       5.61 r
+  u_aw_fifo/U762/Y (NBUFFX2_LVT)                          0.17       5.79 r
+  u_aw_fifo/U1157/Y (NBUFFX2_LVT)                         0.18       5.97 r
+  u_aw_fifo/U585/Y (AO22X1_LVT)                           0.44       6.41 r
+  u_aw_fifo/mem_reg[13][8]/D (DFFX1_LVT)                  0.01       6.42 r
+  data arrival time                                                  6.42
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -3.50       6.50
+  u_aw_fifo/mem_reg[13][8]/CLK (DFFX1_LVT)                0.00       6.50 r
+  library setup time                                     -0.08       6.42
+  data required time                                                 6.42
+  --------------------------------------------------------------------------
+  data required time                                                 6.42
+  data arrival time                                                 -6.42
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: u_data_fifo/full_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_aw_fifo/mem_reg[2][8]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DMAC_TOP           35000                 saed32lvt_ss0p75v125c
+  DMAC_INITIATOR_1   8000                  saed32lvt_ss0p75v125c
+  DMAC_ARBITER_N_MASTER4_DATA_SIZE45
+                     8000                  saed32lvt_ss0p75v125c
+  DMAC_FIFO_DEPTH_LG24_DATA_WIDTH40
+                     16000                 saed32lvt_ss0p75v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_data_fifo/full_reg/CLK (DFFX1_LVT)                    0.00 #     0.00 r
+  u_data_fifo/full_reg/Q (DFFX1_LVT)                      0.20       0.20 r
+  u_data_fifo/full_o (DMAC_FIFO_DEPTH_LG24_DATA_WIDTH37)
+                                                          0.00       0.20 r
+  U141/Y (OR2X2_LVT)                                      0.21       0.41 r
+  channel[2].u_initiator/fifo_full_i (DMAC_INITIATOR_1)
+                                                          0.00       0.41 r
+  channel[2].u_initiator/U16/Y (INVX0_LVT)                0.08       0.49 f
+  channel[2].u_initiator/U109/Y (AND2X1_LVT)              0.12       0.61 f
+  channel[2].u_initiator/arvalid_o (DMAC_INITIATOR_1)     0.00       0.61 f
+  u_ar_arbiter/src_valid_i[2] (DMAC_ARBITER_N_MASTER4_DATA_SIZE45)
+                                                          0.00       0.61 f
+  u_ar_arbiter/U81/Y (NBUFFX2_LVT)                        0.11       0.72 f
+  u_ar_arbiter/U80/Y (AO21X1_LVT)                         0.14       0.87 f
+  u_ar_arbiter/U18/Y (AO22X1_LVT)                         0.08       0.95 f
+  u_ar_arbiter/U17/Y (AO221X1_LVT)                        0.18       1.13 f
+  u_ar_arbiter/U83/Y (INVX0_LVT)                          0.47       1.61 r
+  u_ar_arbiter/U32/Y (AND2X1_LVT)                         0.33       1.94 r
+  u_ar_arbiter/U5/Y (NAND2X0_LVT)                         0.10       2.04 f
+  u_ar_arbiter/U8/Y (NAND3X0_LVT)                         0.08       2.12 r
+  u_ar_arbiter/U90/Y (AND2X1_LVT)                         0.21       2.32 r
+  u_ar_arbiter/U19/Y (NAND3X0_LVT)                        0.11       2.44 f
+  u_ar_arbiter/U92/Y (INVX0_LVT)                          0.12       2.55 r
+  u_ar_arbiter/src_ready_o[1] (DMAC_ARBITER_N_MASTER4_DATA_SIZE45)
+                                                          0.00       2.55 r
+  U135/Y (NBUFFX2_LVT)                                    0.13       2.68 r
+  U134/Y (AND2X1_LVT)                                     0.12       2.80 r
+  U160/Y (NBUFFX2_LVT)                                    0.13       2.93 r
+  U161/Y (NBUFFX2_LVT)                                    0.47       3.40 r
+  U165/Y (NBUFFX2_LVT)                                    0.48       3.89 r
+  U163/Y (NBUFFX2_LVT)                                    0.99       4.87 r
+  U149/Y (NAND2X0_LVT)                                    0.29       5.17 f
+  U150/Y (NAND3X0_LVT)                                    0.07       5.24 r
+  u_aw_fifo/wdata_i[8] (DMAC_FIFO_DEPTH_LG24_DATA_WIDTH40)
+                                                          0.00       5.24 r
+  u_aw_fifo/U677/Y (AND2X1_LVT)                           0.10       5.34 r
+  u_aw_fifo/U683/Y (NBUFFX2_LVT)                          0.28       5.61 r
+  u_aw_fifo/U762/Y (NBUFFX2_LVT)                          0.17       5.79 r
+  u_aw_fifo/U1161/Y (NBUFFX2_LVT)                         0.18       5.97 r
+  u_aw_fifo/U129/Y (AO22X1_LVT)                           0.44       6.41 r
+  u_aw_fifo/mem_reg[2][8]/D (DFFX1_LVT)                   0.01       6.42 r
+  data arrival time                                                  6.42
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -3.50       6.50
+  u_aw_fifo/mem_reg[2][8]/CLK (DFFX1_LVT)                 0.00       6.50 r
+  library setup time                                     -0.08       6.42
+  data required time                                                 6.42
+  --------------------------------------------------------------------------
+  data required time                                                 6.42
+  data arrival time                                                 -6.42
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

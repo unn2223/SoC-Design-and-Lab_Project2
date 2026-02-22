@@ -1,0 +1,10 @@
+/home/SOC43/Project2_Pipelined_DMA/STEP1/DMAC/RTL/DMAC_ARBITER.sv
+/home/SOC43/Project2_Pipelined_DMA/STEP1/DMAC/RTL/DMAC_CFG.sv
+/home/SOC43/Project2_Pipelined_DMA/STEP1/DMAC/RTL/DMAC_ENGINE.sv
+/home/SOC43/Project2_Pipelined_DMA/STEP1/DMAC/RTL/DMAC_FIFO.sv
+/home/SOC43/Project2_Pipelined_DMA/STEP1/DMAC/RTL/DMAC_TOP.sv
+/home/SOC43/Project2_Pipelined_DMA/STEP1/DMAC/SIM/TB/AXI_INTF.sv
+/home/SOC43/Project2_Pipelined_DMA/STEP1/DMAC/SIM/TB/AXI_SLAVE.sv
+/home/SOC43/Project2_Pipelined_DMA/STEP1/DMAC/SIM/TB/AXI_TYPEDEF.svh
+/home/SOC43/Project2_Pipelined_DMA/STEP1/DMAC/SIM/TB/DMAC_TOP_TB.sv
+/home/SOC43/Project2_Pipelined_DMA/STEP1/DMAC/SIM/TB/timescale.v

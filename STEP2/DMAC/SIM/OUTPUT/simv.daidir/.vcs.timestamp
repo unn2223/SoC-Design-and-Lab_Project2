@@ -1,0 +1,97 @@
+0 
+34
++itf+/INST/vcs/R-2020.12-SP1-1/linux64/lib/vcsdp_lite.tab
++vcsd1
++vpi
+-Mamsrun=
+-Masflags=
+-Mcc=gcc
+-Mcfl= -pipe -fPIC -O -I/INST/vcs/R-2020.12-SP1-1/include
+-Mcplusplus=g++
+-Mcrt0=
+-Mcrtn=
+-Mcsrc=
+-Mexternalobj=
+-Mldflags= -rdynamic
+-Mobjects= /INST/vcs/R-2020.12-SP1-1/linux64/lib/libvirsim.so /INST/vcs/R-2020.12-SP1-1/linux64/lib/liberrorinf.so /INST/vcs/R-2020.12-SP1-1/linux64/lib/libsnpsmalloc.so /INST/vcs/R-2020.12-SP1-1/linux64/lib/libvfs.so
+-Mout=simv
+-Msaverestoreobj=/INST/vcs/R-2020.12-SP1-1/linux64/lib/vcs_save_restore_new.o
+-Msyslibs=/INST/verdi/R-2020.12-SP1-1/share/PLI/VCS/LINUX64/pli.a -ldl
+-Mvcsaceobjs=
+-Mxcflags= -pipe -fPIC -I/INST/vcs/R-2020.12-SP1-1/include
+-Mxllcflags=
+-P
+-Xufe=2steps
+-debug_access+all
+-f ../../RTL/filelist.f
+-f ../TB/filelist.f
+-fsdb
+-full64
+-gen_obj
+-kdb
+-picarchive
+/INST/vcs/R-2020.12-SP1-1/linux64/bin/vcs1
+/INST/verdi/R-2020.12-SP1-1/share/PLI/VCS/LINUX64/verdi.tab
+../TB/filelist.f
+../../RTL/filelist.f
+37
+base_Linux=/INST
+VMR_MODE_FLAG=64
+VERDI_HOME=/INST/verdi/R-2020.12-SP1-1
+VENDOR=unknown
+VCS_MX_HOME_INTERNAL=1
+VCS_MODE_FLAG=64
+VCS_HOME=/INST/vcs/R-2020.12-SP1-1
+VCS_DEPTH=0
+VCS_ARG_ADDED_FOR_TMP=1
+VCS_ARCH=linux64
+UNAME=/bin/uname
+TOOL_HOME=/INST/vcs/R-2020.12-SP1-1/linux64
+SSH_TTY=/dev/pts/0
+SSH_CONNECTION=10.240.16.124 57447 115.145.208.243 22
+SSH_CLIENT=10.240.16.124 57447 22
+SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+SOCLOGIN_LOADED=1
+SNPS_VERDI_INTERNAL_LP_XML_NEW_FLOW=1
+SELINUX_USE_CURRENT_RANGE=
+SELINUX_ROLE_REQUESTED=
+SELINUX_LEVEL_REQUESTED=
+SCRNAME=vcs
+SCRIPT_NAME=vcs
+REMOTEHOST=10.240.16.124
+QTLIB=/usr/lib64/qt-3.3/lib
+QTINC=/usr/lib64/qt-3.3/include
+QTDIR=/usr/lib64/qt-3.3
+OVA_UUM=0
+OSTYPE=linux
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+LC_ALL=C
+LAB_PATH=/home/SOC43/Project2_Pipelined_DMA/STEP2/DMAC/SIM/../
+HOSTTYPE=x86_64-linux
+G_BROKEN_FILENAMES=1
+GROUP=SOC43
+DC_HOME=/INST/syn/Q-2019.12-SP5-5
+CVS_RSH=ssh
+0
+14
+1764857603 ../TB/AXI_TYPEDEF.svh
+1764858491 /home/SOC43/Project2_Pipelined_DMA/STEP2/DMAC/SIM/..//RTL/DMAC_CFG.sv
+1764858462 /home/SOC43/Project2_Pipelined_DMA/STEP2/DMAC/SIM/..//RTL/DMAC_ARBITER.sv
+1764857603 /home/SOC43/Project2_Pipelined_DMA/STEP2/DMAC/SIM/..//RTL/DMAC_FIFO.sv
+1764858573 /home/SOC43/Project2_Pipelined_DMA/STEP2/DMAC/SIM/..//RTL/DMAC_INITIATOR.sv
+1764859142 /home/SOC43/Project2_Pipelined_DMA/STEP2/DMAC/SIM/..//RTL/DMAC_TOP.sv
+1764857603 /home/SOC43/Project2_Pipelined_DMA/STEP2/DMAC/SIM/..//SIM/TB/DMAC_TOP_TB.sv
+1764857603 /home/SOC43/Project2_Pipelined_DMA/STEP2/DMAC/SIM/..//SIM/TB/AXI_SLAVE.sv
+1764857603 /home/SOC43/Project2_Pipelined_DMA/STEP2/DMAC/SIM/..//SIM/TB/AXI_INTF.sv
+1764857603 /home/SOC43/Project2_Pipelined_DMA/STEP2/DMAC/SIM/..//SIM/TB/timescale.v
+1764857603 ../../RTL/filelist.f
+1764857603 ../TB/filelist.f
+1618931515 /INST/verdi/R-2020.12-SP1-1/share/PLI/VCS/LINUX64/verdi.tab
+1618974649 /INST/vcs/R-2020.12-SP1-1/linux64/lib/vcsdp_lite.tab
+4
+1618976102 /INST/vcs/R-2020.12-SP1-1/linux64/lib/libvirsim.so
+1618975343 /INST/vcs/R-2020.12-SP1-1/linux64/lib/liberrorinf.so
+1618975120 /INST/vcs/R-2020.12-SP1-1/linux64/lib/libsnpsmalloc.so
+1618975339 /INST/vcs/R-2020.12-SP1-1/linux64/lib/libvfs.so
+1764859146 simv.daidir
+-1 partitionlib

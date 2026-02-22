@@ -1,0 +1,83 @@
+Information: Propagating switching activity (high effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort high
+Design : DMAC_TOP
+Version: Q-2019.12-SP5-5
+Date   : Thu Dec  4 23:41:49 2025
+****************************************
+
+
+Library(s) Used:
+
+    saed32lvt_ss0p75v125c (File: /home/ScalableArchiLab/SAED32_EDK/lib/stdcell_lvt/db_ccs/saed32lvt_ss0p75v125c.db)
+
+
+Operating Conditions: ss0p75v125c   Library: saed32lvt_ss0p75v125c
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+DMAC_TOP               35000             saed32lvt_ss0p75v125c
+DMAC_CFG               8000              saed32lvt_ss0p75v125c
+DMAC_INITIATOR_3       8000              saed32lvt_ss0p75v125c
+DMAC_ARBITER_N_MASTER4_DATA_SIZE45
+                       8000              saed32lvt_ss0p75v125c
+DMAC_FIFO_DEPTH_LG24_DATA_WIDTH40
+                       16000             saed32lvt_ss0p75v125c
+DMAC_FIFO_DEPTH_LG24_DATA_WIDTH37
+                       8000              saed32lvt_ss0p75v125c
+DMAC_INITIATOR_0       8000              saed32lvt_ss0p75v125c
+DMAC_INITIATOR_1       8000              saed32lvt_ss0p75v125c
+DMAC_INITIATOR_2       8000              saed32lvt_ss0p75v125c
+DMAC_INITIATOR_0_DW01_add_0
+                       ForQA             saed32lvt_ss0p75v125c
+DMAC_INITIATOR_0_DW01_add_1
+                       ForQA             saed32lvt_ss0p75v125c
+DMAC_INITIATOR_1_DW01_add_0_DW01_add_2
+                       ForQA             saed32lvt_ss0p75v125c
+DMAC_INITIATOR_1_DW01_add_1_DW01_add_3
+                       ForQA             saed32lvt_ss0p75v125c
+DMAC_INITIATOR_2_DW01_add_0_DW01_add_4
+                       ForQA             saed32lvt_ss0p75v125c
+DMAC_INITIATOR_2_DW01_add_1_DW01_add_5
+                       ForQA             saed32lvt_ss0p75v125c
+DMAC_INITIATOR_3_DW01_add_0_DW01_add_6
+                       ForQA             saed32lvt_ss0p75v125c
+DMAC_INITIATOR_3_DW01_add_1_DW01_add_7
+                       ForQA             saed32lvt_ss0p75v125c
+
+
+Global Operating Voltage = 0.75 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+  Cell Internal Power  = 550.8348 uW   (99%)
+  Net Switching Power  =   7.5441 uW    (1%)
+                         ---------
+Total Dynamic Power    = 558.3790 uW  (100%)
+
+Cell Leakage Power     = 631.7359 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register         542.8099            0.3098        2.8194e+08          825.0638  (  69.33%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational      8.0211            7.2344        3.4979e+08          365.0474  (  30.67%)
+--------------------------------------------------------------------------------------------------
+Total            550.8310 uW         7.5441 uW     6.3174e+08 pW     1.1901e+03 uW
+1
