@@ -46,6 +46,8 @@ CPU가 APB를 통해 채널별 전송 정보(SRC/DST/LEN)를 설정하면, 각 �
 
 
 ## 3. Architecture
+<img width="461" height="258" alt="image" src="https://github.com/user-attachments/assets/b0a0dcbf-2487-4058-ab5d-3c85c967bffb" />
+
 
 `DMAC_TOP` 구성(코드 기준):
 
