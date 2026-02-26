@@ -54,7 +54,10 @@ Project2_Pipelined_DMA/
 - STEP1: `2,183,990,000 ps` (`2,183,990 ns`)
 - STEP2: `2,178,050,000 ps` (`2,178,050 ns`)
 
-차이:
+<img width="480" height="284" alt="sim_result_step1" src="https://github.com/user-attachments/assets/f902bf9f-2475-41b1-a0a4-ffa066338112" />
+
+<img width="480" height="284" alt="sim_result_step2" src="https://github.com/user-attachments/assets/cd5d32a9-3026-4c6e-8788-b42bb23cc6ea" />
+
 
 - 시뮬레이션 실행 결과 기준으로 STEP2의 구조가 약 `5,940 ns` 더 짧습니다.
 
