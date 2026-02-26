@@ -6,8 +6,8 @@
 
 - `STEP1`: Multi-channel DMA (FSM 기반 엔진)
 - `STEP2`: Pipelined DMA (FIFO 분리형 데이터 흐름)
-<img width="461" height="258" alt="image" src="https://github.com/user-attachments/assets/408374e8-e1b4-42bf-bb0e-4a8c3acdbb46" />
-<img width="461" height="258" alt="image" src="https://github.com/user-attachments/assets/b0a0dcbf-2487-4058-ab5d-3c85c967bffb" />
+<img width="354.615" height="198.46" alt="image" src="https://github.com/user-attachments/assets/408374e8-e1b4-42bf-bb0e-4a8c3acdbb46" />
+<img width="354.615" height="198.46" alt="image" src="https://github.com/user-attachments/assets/b0a0dcbf-2487-4058-ab5d-3c85c967bffb" />
 
 
 이 README는 `Architecture` 설명을 제외하고 있습니다.
