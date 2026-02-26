@@ -19,6 +19,7 @@ STEP1의 데이터 전송은 store-and-forward 방식입니다. 엔진은 먼저
 
 
 ## 3. Architecture
+<img width="461" height="258" alt="image" src="https://github.com/user-attachments/assets/408374e8-e1b4-42bf-bb0e-4a8c3acdbb46" />
 
 `DMAC_TOP` 구성:
 - `DMAC_CFG`: APB 레지스터 블록
@@ -58,8 +59,11 @@ STEP1의 데이터 전송은 store-and-forward 방식입니다. 엔진은 먼저
 ### (2) DMAC_ENGINE(AXI)
 
 #### FSM states:
+<img width="612.3" height="343.3" alt="image" src="https://github.com/user-attachments/assets/5bb5e2ad-0c7e-4c72-a518-9895f2ffcd2d" />
 
 - `S_IDLE`, `S_RREQ`, `S_RDATA`, `S_WREQ`, `S_WDATA`, `S_WAIT`
+
+
 
 #### 상태별 동작:
 
