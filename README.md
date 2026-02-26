@@ -1,10 +1,14 @@
 # Project2_Pipelined_DMA
 
+
 ## 1. 프로젝트 소개
 4채널 메모리-투-메모리 DMA 컨트롤러를 2단계로 구현한 프로젝트 입니다.
 
 - `STEP1`: Multi-channel DMA (FSM 기반 엔진)
 - `STEP2`: Pipelined DMA (FIFO 분리형 데이터 흐름)
+<img width="461" height="258" alt="image" src="https://github.com/user-attachments/assets/408374e8-e1b4-42bf-bb0e-4a8c3acdbb46" />
+<img width="461" height="258" alt="image" src="https://github.com/user-attachments/assets/b0a0dcbf-2487-4058-ab5d-3c85c967bffb" />
+
 
 이 README는 `Architecture` 설명을 제외하고 있습니다.
 자세한 `Architecture`는 각 STEP별 README를 참고해주세요.
